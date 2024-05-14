@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            text-align: center;
+        }
+        .header{
+            padding: 15px;
+        }
+        body{
+            width: 960px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .menu{
+            width: 260px;
+            float: left;            
+        }
+        .section{
+            width: 700px;
+            float: right;
+        }
+
+        @media screen and (max-width: 767px) {
+            body{
+                width: auto;
+            }
+            .menu{
+                display: none;
+                width: auto;
+                float: none;
+            }
+            .section{
+                width: auto;
+                float: none;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="header">
+        <img src="./images/wide-top.png" alt=""/>
+    </div>
+    <div class="menu">
+        <img src="./images/wide-left.png" alt=""/>
+    </div>
+    <div class="section">
+        <img src="./images/mobile-smile.png" alt="" width="400" height="300"/>
+    </div> 
+    
+    
+</body>
+</html>

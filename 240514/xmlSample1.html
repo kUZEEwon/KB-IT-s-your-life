@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<p id="demo"></p>
+
+<script>
+let str =   "<books>" +
+                "<book>" +
+                    "<title>탈무드</title>" +
+                    "<author>man</author>" +
+                    "<year>2022-02-14</year>" +
+                "</book>" +
+                "<book>" +
+                    "<title>이솝이야기</title>" +
+                    "<author>woman</author>" +
+                    "<year>2023-12-22</year>" +
+                "</book>" +
+            "</books>";
+
+// 문자열 -> xml == parsing(parser는 파싱을 할 수 있는 클래스)
+
+let parser, xml;
+
+parser = new DOMParser();
+// 파싱
+xml = parser.parseFromString(str, "text/html");
+
+document.getElementById('demo').innerHTML 
+    // = xml.getElementsByTagName("book").length;
+    // = xml.getElementsByTagName("book")[0].childNodes[0].nodeName; // title
+    // = xml.getElementsByTagName("book")[0].childNodes[1].nodeName;
+
+    = xml.getElementsByTagName("book")[1].childNodes[0].childNodes[0].nodeValue;                
+
+</script>
+    
+</body>
+</html>

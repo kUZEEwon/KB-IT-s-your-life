@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function changeImage(img){
+            const imageDisplay = document.getElementById('imageDisplay');
+
+            switch (img) {
+                case 'img1':
+                    imageDisplay.src = "./images/image1.png";
+                    break;            
+                case 'img2':
+                    imageDisplay.src = "./images/image2.png";
+                    break;            
+                case 'img3':
+                    imageDisplay.src = "./images/image3.png";
+                    break;            
+                default:
+                    break;
+            }
+
+        }
+
+    </script>
+</head>
+<body>
+
+<button onclick="changeImage('img1')" style="background-color: lime; width: 400px;">제주도로</button>
+<button onclick="changeImage('img2')" style="background-color: orange; width: 400px;">일본으로</button>
+<button onclick="changeImage('img3')" style="background-color: purple; width: 400px;">하와이로</button>
+    
+<hr color="red" width="600"/>
+
+<h3>힘들다 우리도 떠나자!!</h3>
+
+<hr color="red" width="600"/>
+
+<img src="./images/image4.png" id="imageDisplay" width="400" height="250"/>
+
+</body>
+</html>

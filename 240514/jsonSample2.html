@@ -16,23 +16,18 @@
 
         xhttp.onreadystatechange = function () {
             if (this.readyState == 4 && xhttp.status == 200) {
-                jsonProc(this);
+                let json = JSON.parse(this.responseText); // text -> json
+                // let str = JSON.stringify(json);             // json -> text
+
+                document.getElementById('demo').innerHTML = json.quiz["sport"].q1.options[0];
             }
         }
 
         xhttp.open("GET", "NBAjson.json", true);
         xhttp.send();
 
-        function jsonProc(xhttp) {
-            // json Parsing
-            let json = JSON.parse(xhttp.responseText);
-
-            let txt = "";
-            txt = json.quiz.sport.q1.options[0];
-            document.getElementById('demo').innerHTML = txt;
-        }
     </script>
-    
+
 </body>
 
 </html>

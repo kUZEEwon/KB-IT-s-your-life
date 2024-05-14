@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<!--
+        XML - eXtensible Makeup Language
+                확장        표시
+        사용자 전용 태그명
+        Data를 공유하기 위한 목적
+        설정을 위해 사용
+        교통정보, 노선버스
+
+        Parsing : 문자열 -> 형태
+
+        비동기 -> ajax, axios
+-->
+
+<p id="demo"></p>
+
+<button onclick="loadXmlDoc()">내용변경</button>
+
+<script>
+
+let xhttp = new XMLHttpRequest();
+
+function loadXmlDoc(){
+
+    xhttp.onreadystatechange = function(){
+        console.log(this.responseText);
+        console.log(this.readyState);
+        console.log(this.status);
+
+        if(this.readyState == 4 && this.status == 200){
+            document.getElementById("demo").innerHTML = this.responseText;
+        }
+    }
+
+    xhttp.open("GET", "test.txt", true);
+    console.log("xhttp.open");
+    xhttp.send();
+    console.log("xhttp.send");
+}
+
+/*
+    readyState : 진행상태
+    0   ->  open() 메소드를 수행하기전..
+    1   ->  loading 중...
+    2   ->  loading 완료
+    3   ->  server 처리중
+    4   ->  server 처리완료
+
+    status
+    200 -> 성공
+    403 -> 접근금지
+    404 -> 없음
+    500 -> 문법에러
+
+*/
+
+
+
+</script>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        JavaScript 
+        Front-end 언어. Client 코드
+        목적: 웹브라우저의 Tag를 접근하기 위한 스크립트
+              화면을 제어하기 위한 요소이다.
+              Java != JavaScript
+              compile을 하지 않는다 -> 가볍다
+              소스 -> 기계어(2진수 or 16진수)
+
+              animation, Text To Speech, Speech To Text
+            
+            id      -> 1개 유효     JavaScript
+            class   -> 다수         CSS, JavaScript
+            name    -> 다수         link, JavaScript
+    -->
+
+<script>
+// 한줄 주석문
+
+/*
+    범위 주석문
+*/
+
+console.log("Hell JS");
+window.console.log("Hi JS");
+
+// alert("안녕 JS");
+// window.alert("방가 JS");
+
+// let name = prompt("이름을 입력");
+// console.log(name);
+
+// variable -> var
+
+num = 123;
+console.log(num);
+
+var num;                // integer
+var pi = 3.141592;      // double
+var name = "홍길동";    // String
+var answer = true;      // boolean
+
+var num = 234;
+console.log(num);
+
+
+let human, number;
+human = "성춘향";
+number = 1024;
+
+human = 2048;
+console.log(human);
+
+
+// Array        0       1      2
+let cars = [ "Volvo", "BMW", "Benz" ];
+console.log(cars[0]);
+
+let newCars = new Array(3);
+newCars[0] = "볼보";
+newCars[1] = "비엠더블유";
+newCars[2] = "벤츠";
+console.log(newCars[2]);
+
+// 제어문 -> for
+for (let i = 0; i < newCars.length; i++) {
+    console.log(newCars[i]);    
+}
+
+for(let i in newCars){
+    console.log(newCars[i]);
+}
+
+newCars.forEach(function(item, index){
+    console.log(index, item);
+});
+
+newCars.forEach((item, index)=>{
+    console.log(index, item);
+});
+
+console.log(typeof newCars);
+
+// const    -> C++ 상수
+const ladyNumber = 246;
+const LADYCOUNT = 100;
+
+let lady = ladyNumber;
+
+let obj = {     // json
+    firstname:"길동",
+    lastname:"홍",
+    age:24,
+    print:function(){
+        console.log(this.lastname + this.firstname);
+    }
+};
+
+console.log(obj.lastname, obj.age);
+obj.print();
+
+class Person{
+    constructor(name, age){
+        this.name = name;
+        this.age = age;
+    }
+    printing(){
+        console.log(this.name, this.age);
+        console.log(`${this.name}, ${this.age}`);
+    }
+}
+
+let person = new Person('일지매', 22);
+console.log(person.age);
+person.printing();
+
+</script>    
+    
+</body>
+</html>

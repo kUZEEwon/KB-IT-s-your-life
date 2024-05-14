@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<h3>hello Html</h3>    
+
+<p>I can do it</p>
+
+<p>I am success</p>
+
+<input type="text" value="홍길동"/> 
+
+<p>Naver change my mind</p>
+
+<input type="text" value="24"/> 
+<input type="text" value="서울시"/> 
+
+<br/><br/>
+
+<input type="text" id="hobby" value="음악감상" placeholder="취미기입"/>
+
+<script>
+    // console.log(document.body.innerHTML);            // 현재 document.body의 전체
+
+    console.log(document.documentElement.innerHTML);    // 현재 document의 전체
+
+    let arrP = document.getElementsByTagName("p");
+    console.log(arrP[2].innerHTML);
+
+    arrP[1].innerHTML = "나는 반드시 성공한다";
+
+    document.getElementsByTagName("input")[2].value = "강릉시";
+
+    let hobby = document.getElementById("hobby").value;
+    console.log(hobby);
+
+</script>    
+    
+</body>
+</html>

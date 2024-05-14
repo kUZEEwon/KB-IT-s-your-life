@@ -1,0 +1,74 @@
+
+#total{
+    color: blue;
+    font: 25px "궁서" bold;
+    width: 800px;
+    height: 800px;
+}
+
+div{
+    font-size: 25px;
+    font-weight: bold;
+    color: blue;
+}
+
+#td{
+    background-color: pink;
+    width: 150px;
+    height: 50px;
+}
+#td2{
+    background-color: white;
+    width: 300px;
+}
+td{
+    text-align: center;
+}
+
+
+a{
+    text-decoration: none;
+    color: red;
+}
+a:hover { /* 마우스를 a위에 올렸을 때 */
+	background: gold;
+}
+
+li{
+    list-style: none;
+    float: left;
+    padding: 15px;    
+}
+
+#top{
+    width: 800px;
+    height: 100px;
+    background-color: lime;
+}
+
+#top2{
+    color: yellow;
+    top:5px;
+    right: 5px;
+    width: 250px;
+    height: 100px;
+    background-color: black;
+    position: fixed;
+    border-radius: 100px 10px;
+}
+
+li:first-child{
+    border-radius: 20px 0 0 20px;
+}
+li:last-child{
+    border-radius: 0 20px 20px 0;
+}
+
+li:nth-child(2n){   /* li중에서 짝수만을 선택 */
+    background-color: pink;
+}
+
+li:nth-child(2n+1){   /* li중에서 홀수만을 선택 */
+    background-color: orange;
+}
+

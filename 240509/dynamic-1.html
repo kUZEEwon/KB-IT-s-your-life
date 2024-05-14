@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        @media screen and (min-width:960px) {   /* 조건 960px이상 */
+            body{
+                background-color: blue;
+            }
+            #hr2, #hr3{
+                visibility: hidden;
+            }
+        }
+        @media screen and (min-width:768px) and (max-width:959px) {
+            body{
+                background-color: yellow;
+            }
+            #hr1, #hr3{
+                visibility: hidden;
+            }
+        }
+        @media screen and (max-width:767px) {
+            body{
+                background-color: red;
+            }
+            #hr1, #hr2{
+                visibility: hidden;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <br/><br/>
+    <span id="hr1">난 블랙핑크</span>   <!-- 폭: 767px -->
+    <span id="hr2">난 옐로우핑크</span> <!-- 폭: 768px ~ 959px -->
+    <span id="hr3">난 그린핑크</span>   <!-- 폭: 960px -->
+
+    <br><br><br><br>
+    <img src="./images/pink.png" width="200" height="150"/> 
+    
+</body>
+</html>

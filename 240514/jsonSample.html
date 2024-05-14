@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<!--
+        JSON : Java Script Object Notation
+                                    표기법
+        Array -> Json
+        pair로 관리  
+        key : value
+
+        [ 
+            { name:홍길동, age:24, height:171.2 },
+            { name:홍길동, age:24, height:171.2 }  
+        ]
+-->
+
+<p id="demo"></p>
+
+<script>
+
+let str = '{ "name":"홍길동", "age":24, "height":172.1 }';
+console.log(str);
+
+// document.getElementById('demo').innerHTML = str;
+
+// json parsing
+let json = JSON.parse(str);
+console.log(json);
+
+document.getElementById('demo').innerHTML = json.name + ' ' + json.height;
+
+let jsonData = [
+                    {
+                        "name":"홍길동",
+                        "age":24,
+                        "height":172.1
+                    },
+                    {
+                        "name":"성춘향",
+                        "age":16,
+                        "height":153.3
+                    },
+                    {
+                        "name":"일지매",
+                        "age":22,
+                        "height":181.4
+                    }
+];
+
+document.getElementById('demo').innerHTML = jsonData[1].age;
+
+</script>
+    
+</body>
+</html>

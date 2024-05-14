@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- css 방식 : inline(태그), internal, external -->
+
+    <style>
+    .find, .menu{
+        width: 800px;
+        height: 50px;
+        margin: auto;   /* div align -> center */
+        border: 1px dotted;
+        text-align: center;
+    }
+    img{
+        width: 150px;
+        height: 30px;
+    }
+    input{
+        border-color: lime;
+        width: 400px;
+        height: 30px;
+    }
+    span{
+        background-color: yellow;
+    }
+    li{
+        list-style: none;
+        padding: 10px;
+        float: left;
+    }
+    </style>
+
+
+
+</head>
+<body>
+
+    <!-- <div>coffee</div>
+    <div>tea</div>
+    <div>soda</div> -->
+
+    <!-- <span>coffee</span>
+    <span>tea</span>
+    <span>soda</span> -->
+
+    <!-- <div style="border: 1px solid; background-color: yellow;">Hello Mulcam</div> -->
+
+    <div id="total">   <!-- id class name -->
+
+        <div class="find">   <!-- 검색 -->
+            <img src="./naver-logo.png" alt="네이버이미지"/>
+            <input type="text"/>&nbsp;&nbsp;<span>🔍</span>
+        </div> 
+        
+        <div class="menu"> <!-- 메뉴 -->
+            <ul>   <!-- unordered list -->
+                <li class="green">메일</li>
+                <li class="green">카페</li>
+                <li class="green">블로그</li>
+                <li class="green">지식IN</li>
+                <li class="green">쇼핑</li>
+                <li class="green">쇼핑LIVE</li>
+                <li class="green">PAY</li>
+                <li>사전</li>
+                <li>뉴스</li>
+                <li>증권</li>
+                <li>부동산</li>
+            </ul>
+        </div>
+
+    </div>
+    
+</body>
+</html>
