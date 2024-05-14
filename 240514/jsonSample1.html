@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jsonSample1</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+
+    <script>
+
+        let xhttp = new XMLHttpRequest();
+
+        xhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && xhttp.status == 200) {
+                jsonProc(this);
+            }
+        }
+
+        xhttp.open("GET", "jsondata.json", true);
+        xhttp.send();
+
+        function jsonProc(xhttp) {
+            // alert(xhttp.responseText);
+
+            // json Parsing
+            let json = JSON.parse(xhttp.responseText);
+            alert(json);
+
+            let txt = "";
+            for (let i = 0; i < json.length; i++) {
+                txt += json[i].name + "<br/>" +
+                    json[i].age + "<br/>" +
+                    json[i].address + "<br/>" +
+                    json[i].tel + "<br/>";
+            }
+            document.getElementById('demo').innerHTML = txt;
+        }
+    </script>
+    
+</body>
+
+</html>
