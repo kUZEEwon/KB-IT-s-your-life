@@ -19,7 +19,10 @@
                 let json = JSON.parse(this.responseText); // text -> json
                 // let str = JSON.stringify(json);             // json -> text
 
-                document.getElementById('demo').innerHTML = json.quiz["sport"].q1.options[0];
+
+                // output 확인
+                // document.getElementById('demo').innerHTML = json.quiz["sport"].q1.options[0];
+                document.getElementById('demo').innerHTML = json.quiz["maths"].q2.options[2];
             }
         }
 
