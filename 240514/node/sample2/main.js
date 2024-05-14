@@ -1,3 +1,4 @@
+
 // 외부 모듈 불러오기
 
 const calculator = require('./calculator');
@@ -11,5 +12,4 @@ console.log(calculator.mymodule.height);
 
 let mResult = calculator.mymodule.multi(3,4);
 console.log(mResult);
-
 
