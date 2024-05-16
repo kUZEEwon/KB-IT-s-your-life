@@ -18,13 +18,13 @@
         }
     </style>
     <script>
-        function calculateFinalAmount () {
-            const paymentAmount = parseFloat( document.getElementById( "paymentAmount" ).value );
-            const paymentMethod = document.getElementById( "paymentMethod" ).value;
-            const paymentShop = document.getElementById( "paymentShop" ).value;
+        function calculateFinalAmount() {
+            const paymentAmount = parseFloat(document.getElementById("paymentAmount").value);
+            const paymentMethod = document.getElementById("paymentMethod").value;
+            const paymentShop = document.getElementById("paymentShop").value;
             let finalAmount = paymentAmount;
 
-            switch ( paymentMethod ) {
+            switch (paymentMethod) {
                 case '신용카드':
                     finalAmount += 1000;
                     break;
@@ -35,7 +35,7 @@
                     break;
             }
 
-            document.getElementById( "finalAmountDisplay" ).innerText = `${ paymentShop }에서 최종 결제금액: ${ finalAmount }원`;
+            document.getElementById("finalAmountDisplay").innerText = `${paymentShop}에서 최종 결제금액: ${finalAmount}원`;
         }
     </script>
 </head>
