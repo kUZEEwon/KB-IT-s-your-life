@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery 배우기</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- 
+        Jquery : JavaScript를 경량화
+                Ajax(비동기 통신)
+
+        형식 : 
+                $( 태그명, #id, .class, name ).함수명(매개변수);
+    -->
+
+    <input type="text" id="name" />
+
+    <button type="button" onclick="btnclick()" id="btn">클릭</button>
+
+    <script>
+        function btnclick() {
+            let name = document.getElementById('name').value;
+            alert(name);
+        }
+    </script>
+
+    <br /><br />
+
+    <input type="text" id="address" />
+
+    <button type="button" id="addr">click</button>
+
+    <script>
+        $("#addr").click(function () { // callback 함수
+            // alert(`click`);
+
+            let address = $(`#address`).val();
+            alert(address);
+        });
+    </script>
+
+</body>
+
+</html>

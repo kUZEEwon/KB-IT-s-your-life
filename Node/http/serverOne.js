@@ -5,7 +5,7 @@ const http = require('http');
 const server = http.createServer();
 
 const port = 3000;
-server.listen(port,() => {
+server.listen(port, () => {
     console.log(`웹 서버가 시작되었어요.\nport번호  :   ${port}`);
 });
 
@@ -17,31 +17,31 @@ server.on('connection', (socket) => {
 });
 
 // 클라이언트 요청 이벤트 처리
-server.on('request', (request, response) => {
+server.on('request', (request, res) => {
     console.log(`클라이언트 요청이 들어왔어요.`);
     // console.dir(request);
 
-    response.writeHead(200, {"Content-Type":"text/html; charset=utf-8"});
-    response.write("<!DOCTYPE html>");
+    res.writeHead(200, { "Content-Type": "text/html; charset=utf-8" });
+    res.write("<!DOCTYPE html>");
 
-    response.write("<html>");
+    res.write("<html>");
 
-    response.write("<head>");
-    response.write("<title>응답페이지</title>");
-    response.write("</head>");
+    res.write("<head>");
+    res.write("<title>응답페이지</title>");
+    res.write("</head>");
 
-    response.write("<body>");
-    response.write("<h1>반가워요, 응답 html 이에요.</h1>");
-    response.write("</body>");
+    res.write("<body>");
+    res.write("<h1>반가워요, 응답 html 이에요.</h1>");
+    res.write("</body>");
 
 
-    response.write("</head>");
+    res.write("</head>");
 
-    response.write("</html>");
+    res.write("</html>");
 })
 
 // 서버 종료 처리
-server.on('close', ()=> {
+server.on('close', () => {
     console.log(`server close`);
 })
 
