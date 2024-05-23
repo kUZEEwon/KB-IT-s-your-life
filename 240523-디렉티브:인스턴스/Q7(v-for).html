@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q7_v-for</title>
+    <style>
+        #list {
+            width: 600px;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        #list td, #list th {
+            border: 1px solid black;
+            text-align: center;
+        }
+        #list > thead > tr{
+            color: yellow;
+            background-color: purple;
+        }
+        [v-clock]{
+            display: none;
+        }
+    </style>
+
+    <!-- vue는 cdn 방식 -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+</head>
+
+<body>
+    <div id="app">
+        <table id="list">
+            <thead>
+                <tr>
+                    <th>번호</th>
+                    <th>이름</th>
+                    <th>전화번호</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="co in contacts" :key="co.number">
+                    <td>{{ co.number }}</td>
+                    <td>{{ co.name }}</td>
+                    <td>{{ co.tel }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+
+        const datas = [
+            { number: 1011, name: 'RM', tel: '010-1234-5678' },
+            { number: 1012, name: '정국', tel: '010-9876-5432' },
+            { number: 1013, name: '제이홉', tel: '010-5555-7777' },
+            { number: 1014, name: '슈가', tel: '010-2493-7792' }
+        ];
+
+        Vue.createApp({
+            data() {
+                return {
+                    contacts: datas
+                }
+            }
+        }).mount('#app');
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q3_v-model</title>
+
+    <!-- vue는 cdn 방식 -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <input type="text" v-model="name"/> 
+        <br/>
+        입력하신 이름 : <span>{{ name }}</span>
+    </div>
+
+    <script>
+
+        Vue.createApp({
+            data() {
+                return {
+                    name: ""
+                }
+            }
+        }).mount("#app");
+
+    </script>
+</body>
+</html>
