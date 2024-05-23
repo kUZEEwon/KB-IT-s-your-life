@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VueSample</title>
+
+    <!-- vue는 cdn 방식 -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+
+<body>
+
+    <div id="app">
+        <h3>hello {{ name }}</h3>
+        <p>world {{ address }}</p>
+    </div>
+
+    <script>
+        const vue = Vue.createApp({
+            // 변수를 생성
+            data(){
+                return { // 변수들을 정의
+                    name: "홍길동",
+                    address: "서울"
+                }
+            }
+        }).mount("#app");   // 탑재하다.
+        
+        vue.name = "김지원";
+    </script>
+
+</body>
+
+</html>
