@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VueSample3</title>
+
+    <!-- vue는 cdn 방식 -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+
+<body>
+
+    <!-- v-html, v-text -->
+
+    <div id="app">
+        <p>{{ str }}</p>
+        <p v-html="str"></p>
+        <p v-text="str"></p>
+    </div>
+
+    <script>
+        /*
+        document.getElementById(`demo`).innerHTML = "<b>Hello</b>";
+        document.getElementById(`demo`).innerText = "안녕하세요";
+
+        $("#demo").html("<b>Hello</b>");
+        $("#demo").text("안녕하세요");
+        */
+
+        // Vue로 사용하기
+        Vue.createApp({
+            // 변수를 생성
+            data(){
+                return { // 변수들을 정의
+                    str: "<strong>굵게</strong> 또는 <em>기울기</em> 설정"
+                }
+            }
+        }).mount("#app");   // 탑재하다.
+        
+
+    </script>
+</body>
+
+</html>

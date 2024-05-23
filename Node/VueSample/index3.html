@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VueSample4</title>
+
+    <!-- vue는 cdn 방식 -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+
+<body>
+    <!-- v-show (hide, show) -->
+
+    <div id="app">
+        <div v-show="isBoxShow">
+            <p>비 로그인 상태</p>
+            <button onclick="login()">로그인</button>
+        </div>
+        <div v-show="!isBoxShow">
+            <p>로그인 상태</p>
+            <button onclick="logout()">로그아웃</button>
+        </div>
+    </div>
+
+    <script>
+
+        const v = Vue.createApp({
+            // 변수를 생성
+            data(){
+                return { // 변수들을 정의
+                    isBoxShow: true
+                }
+            }
+        }).mount("#app");
+
+        function login()
+        {
+            v.isBoxShow = false;
+        }
+
+        function logout()
+        {
+            v.isBoxShow = true;
+        }
+
+    </script>
+</body>
+</html>
