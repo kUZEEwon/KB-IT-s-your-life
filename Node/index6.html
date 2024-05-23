@@ -1,0 +1,46 @@
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VueSample7</title>
+
+    <!-- vue는 cdn 방식 -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+
+<body>
+    <!-- v-bind : 값을 집어 넣는 것 -->
+
+    <ul id="app">
+        <li><a v-bind:href="url">{{ url }}</a></li>
+        <li><a :href="getUrl('naver')">naver</a></li>
+
+        <li><p style="font-size: 3em;">Css 스타일 적용</p></li>
+        <li><p :style="red_font">Css 스타일 적용</p></li>
+    </ul>
+
+
+    <script>
+        
+        Vue.createApp({
+            // 변수를 생성
+            data(){
+                return { // 변수들을 정의
+                    url: `https://www.w3schools.com/`,
+                    red_font:`font-size: 3em`
+                }
+            },
+            // 함수 선언
+            methods:{   // 멤버 함수
+                getUrl( name ){
+                    return "https://www." + name + ".com";
+                }
+            }
+        }).mount("#app");
+
+    </script>
+
+</body>
+
+</html>

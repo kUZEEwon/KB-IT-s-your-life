@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VueSample6</title>
+
+    <!-- vue는 cdn 방식 -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+
+<body>
+    <!-- v-on : 버튼 클릭 -->
+    <!-- <button onclick="func()"></button> -->
+
+    <div id="app">
+        <h3>{{ value }}</h3>
+        <button v-on:click="setValue('왼쪽')">클릭</button>
+        <button @click="setValue('오른쪽')">클릭</button>
+    </div>
+
+
+    <script>
+
+        Vue.createApp({
+            // 변수를 생성
+            data(){
+                return { // 변수들을 정의
+                    value: `안녕하세요~`
+                }
+            },
+            // 함수 선언
+            methods:{   // 멤버 함수
+                setValue( str ){
+                    this.value = str + "클릭!";
+                }
+            }
+        }).mount("#app");
+
+        
+    </script>
+</body>
+</html>

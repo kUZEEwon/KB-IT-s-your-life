@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VueSample5</title>
+
+    <!-- vue는 cdn 방식 -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+
+<body>
+    <!-- v-if -->
+
+    <div id="app">
+        <h3>오늘은
+            <span v-if="dayOfWeek==1">월요일</span>
+            <span v-else-if="dayOfWeek==2">화요일</span>
+            <span v-else-if="dayOfWeek==3">수요일</span>
+            <span v-else-if="dayOfWeek==4">목요일</span>
+            <span v-else-if="dayOfWeek==5">금요일</span>
+            <span v-else-if="dayOfWeek==6">토요일</span>
+            <span v-else>일요일</span>
+        </h3>
+        <button onclick="rand()">다른날은?</button>
+    </div>
+
+    <script>
+        
+        const v = Vue.createApp({
+            // 변수를 생성
+            data(){
+                return { // 변수들을 정의
+                    dayOfWeek: (new Date()).getDay()
+                }
+            }
+        }).mount("#app");
+
+        function rand(){
+            v.dayOfWeek = Math.floor(Math.random() * 7);
+        }
+
+    </script>
+</body>
+
+</html>
