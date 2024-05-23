@@ -23,6 +23,7 @@ app.get(`/test`, (req, res) => {
 });
 
 app.get(`/check`, (req, res) => {
+    // query의 id가 member에 있다면 해당 행을 send
     const memberId = req.query.id;
     const foundMember = member.find(member => member.id === memberId);
     if (foundMember) {
