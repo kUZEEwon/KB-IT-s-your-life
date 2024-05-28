@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+
+    <!-- v-for(loop문) -->
+    <div id="app">
+        <span v-for="i in 5">{{ i }}&nbsp;</span>
+
+        <br/>
+
+        <ul>
+            <li v-for="item in items">{{ item.fruit }}</li>
+        </ul>
+
+        <br/>
+
+        <table border="1">    
+        <tr>
+            <th>isdn</th>
+            <th>제목</th>
+            <th>가격</th>
+        </tr>
+        <tr v-for="book in expensiveBooks">    <!-- v-for, v-if -->                             
+            <td>{{ book.isdn }}</td>
+            <td>{{ book.title }}</td>
+            <td>{{ book.price }}</td>            
+        </tr>
+        </table>
+
+    </div>
+
+    <script>
+        const vue = Vue.createApp({
+            data(){
+                return{
+                    items: [
+                        { fruit: "사과" },
+                        { fruit: "배" },
+                        { fruit: "포도" }
+                    ],
+
+                    books:[
+                        {
+                            isdn: '123-456',
+                            title: "JavaScript 정복",
+                            price: 28000
+                        },
+                        {
+                            isdn: '345-678',
+                            title: "Python Master",
+                            price: 34800
+                        },
+                        {
+                            isdn: '678-a23',
+                            title: "독학 C#",
+                            price: 31500
+                        }
+                    ]
+                }
+            },
+            computed: {
+                expensiveBooks(){
+                    return this.books.filter((b)=>{
+                        return b.price >= 30000;
+                    })
+                }
+            }
+
+        }).mount("#app");      
+
+
+    </script>
+
+    
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <style>
+        #app{
+            margin: auto;
+            margin-top: 60px;
+            width: 60%;
+            border: 2px solid #cccccc;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+
+<h3>회원가입</h3>
+
+<div id="app">
+
+    <table border="1">
+    <tr>
+        <td>아이디</td>
+        <td>
+            <input type="text" id="id" size="20"/>
+            <button type="button" id="idcheckbtn">id중복확인</button><br/>
+            <p id="idcheck"></p>
+        </td>
+    </tr>
+    <tr>
+        <td>패스워드</td>
+        <td>
+            <input type="text" id="pw" size="20"/>            
+        </td>
+    </tr>
+    <tr>
+        <td>이름</td>
+        <td>
+            <input type="text" id="name" size="20"/>
+        </td>
+    </tr>
+    <tr>
+        <td>이메일</td>
+        <td>
+            <input type="text" id="email" size="20"/>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <button id="regi">회원가입</button>
+        </td>
+    </tr>
+    </table>
+</div>
+
+<script>
+$("#idcheckbtn").click(function(){
+
+    $.ajax({
+        url:"http://localhost:3000/idcheck",
+        type:"post",
+        data:{ "id":$("#id").val() },
+        success:function(msg){
+            // alert('success');
+            // alert(msg.result);
+            if(msg.result === "OK"){
+                $("#idcheck").css("color", "#0000ff");
+                $("#idcheck").html("사용할 수 있는 아이디입니다");
+            }else{
+                $("#idcheck").css("color", "#ff0000");
+                $("#idcheck").html("사용중인 아이디입니다");
+                $("#id").val("");
+            }
+        },
+        error:function(){
+            alert('error');
+        }
+    });
+});
+
+$("#regi").click(function(){
+
+    // 검사
+
+    $.ajax({
+        url:"http://localhost:3000/regi",
+        type: "post",
+        data:{ id:$("#id").val(), pw:$("#pw").val(), name:$("#name").val(), email:$("#email").val() },
+        success:function(msg){
+            // alert('success');
+            // alert(msg);
+            if(msg === "OK"){
+                alert("성공적으로 가입되었습니다");
+
+                location.href = "login.html";                
+            }else{
+                alert("가입되지 않았습니다");
+            }
+        },
+        error:function(){
+            alert("error");
+        }
+    });
+
+})
+
+
+</script>
+
+
+    
+</body>
+</html>

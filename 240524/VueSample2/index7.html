@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+
+    <!-- v-model -->
+    <div id="app">
+        <label for="name">이름: </label>
+        <input type="text" id="name" v-model="myname" />
+
+        <div>안녕하세요 {{ myname }} 님</div>
+
+        <br/>
+
+        <form>
+            <label for="dog">강아지</label>
+                <input type="radio" value="dog" v-model="pet"/><br/>
+            <label for="cat">야옹이</label>
+                <input type="radio" value="cat" v-model="pet" /><br/>
+            <label for="other">그외에</label>
+                <input type="radio" value="other" v-model="pet" /><br/>
+        </form>
+        <p>선택팻: {{ pet }}</p>
+
+        <br/>
+
+        <input type="checkbox" v-model="agree" />
+        <label for="agree">동의함</label>
+        <p>회답: {{ agree }}</p>      
+
+        <br/>
+
+        <div>사용하는 OS는?</div>
+
+        <input type="checkbox" value="windows" v-model="os" />
+        <label for="windows">Windows</label>
+        <input type="checkbox" value="Linux" v-model="os" />
+        <label for="Linux">Linux</label>
+        <input type="checkbox" value="iOS" v-model="os" />
+        <label for="iOS">iOS</label>
+
+        <p>사용하는 os: {{ os }}</p>
+
+        <br/>
+
+        <select v-model="fruit">
+            <option v-for="item in options"
+                    v-bind:value="item.value">{{ item.text }}</option>
+        </select>
+        <span>선택: {{ fruit }}</span>
+    </div>
+    
+    <script>
+
+        // document.getElementById("name").value = "성춘향";
+
+        const vue = Vue.createApp({
+            data(){
+                return{
+                    myname: '홍길동',    // -> 변수
+                    pet: 'dog',
+                    agree: true,
+                    os: [ "iOS"  ],
+                    fruit: "사과",
+                    options: [
+                        { text:"apple", value:"사과" },
+                        { text:"pear", value:"배" },
+                        { text:"grape", value:"포도" },
+                    ]
+
+                    //jdata: { "name":"성춘향", "age":16 }
+                }
+            }
+        }).mount("#app");
+
+        // vue.myname = "";
+        // vue.jdata.name = "";
+
+    </script>
+
+    
+    
+</body>
+</html>

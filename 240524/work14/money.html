@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+
+<div id="app">
+    <span>금액</span> : <input v-model.number="amount"/><br/>
+    <button @click="deposit">입금</button> 
+    <button @click="withdraw">인출</button> 
+
+    <button @click.once="balance += 10000">계좌 개설 이벤트</button>
+    <br/>
+    <hr>
+    <h3>계좌 잔고: {{ balance }}</h3>
+</div>
+
+<script>
+    Vue.createApp({
+        data(){
+            return{
+                amount:0,
+                balance:0
+            }
+        },
+        methods:{
+            deposit(){
+                let amt = this.amount;
+                // console.log(amt + 2);
+                if(amt <= 0){
+                    alert('0보다 큰값을 입력해 주십시오');
+                }else{
+                    this.balance += amt;
+                }
+                this.amount = 0;
+            },
+            withdraw(){
+                let amt = this.amount;
+                
+                this.balance -= amt;
+            }
+        }
+    }).mount("#app");
+
+
+</script>
+
+
+    
+</body>
+</html>
