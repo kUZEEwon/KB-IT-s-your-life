@@ -15,10 +15,3 @@ app.use(memberR);
 app.listen(3000, ()=>{
     console.log("server start port:3000");
 });
-
-
-
-
-
-
-

@@ -4,7 +4,3 @@
         <slot>Default message</slot>
     </div>
 </template>
-
-<script>
-
-</script>

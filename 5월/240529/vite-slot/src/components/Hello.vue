@@ -5,7 +5,3 @@
         <input type="text"/>
     </div>
 </template>
-
-<script>
-
-</script>
