@@ -1,16 +1,16 @@
 [
- {
-  "name": "구지원",
-  "age": "23",
-  "phone": "23232",
-  "address": "address",
-  "memo": "memo"
- },
- {
-  "name": "지원",
-  "age": "454",
-  "phone": "23232",
-  "address": "address",
-  "memo": "memo"
- }
+    {
+        "name": "구지원",
+        "age": "23",
+        "phone": "23232",
+        "address": "address",
+        "memo": "memo"
+    },
+    {
+        "name": "지원",
+        "age": "454",
+        "phone": "23232",
+        "address": "address",
+        "memo": "memo"
+    }
 ]
