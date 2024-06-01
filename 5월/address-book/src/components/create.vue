@@ -1,49 +1,55 @@
+
 <template>
-    <div>
+    <div class="container mt-3">
         <h3>지인추가</h3>
 
         <br />
-        <table border="1">
-            <col width="150" />
-            <col width="500" />
-            <tbody>
-                <tr>
-                    <th>이름</th>
-                    <td>
-                        <input v-model="name" />
-                    </td>
-                </tr>
-                <tr>
-                    <th>나이</th>
-                    <td>
-                        <input v-model="age" />
-                    </td>
-                </tr>
-                <tr>
-                    <th>전화번호</th>
-                    <td>
-                        <input v-model="phone" />
-                    </td>
-                </tr>
-                <tr>
-                    <th>주소</th>
-                    <td>
-                        <input v-model="address" />
-                    </td>
-                </tr>
-                <tr>
-                    <th>메모</th>
-                    <td>
-                        <textarea rows="15" cols="50" v-model="memo"></textarea>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="table-responsive">
+            <table class="table">
+                <colgroup>
+                    <col width="150">
+                    <col width="500">
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th>이름</th>
+                        <td>
+                            <input v-model="name" class="form-control" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>나이</th>
+                        <td>
+                            <input type="number" v-model="age" class="form-control" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>전화번호</th>
+                        <td>
+                            <input v-model="phone" class="form-control" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>주소</th>
+                        <td>
+                            <input v-model="address" class="form-control" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>메모</th>
+                        <td>
+                            <textarea rows="15" cols="50" v-model="memo" class="form-control"></textarea>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-        <button @click="add">추가</button>
+        <button @click="add" class="btn btn-primary">추가</button>
 
     </div>
 </template>
+
 
 <script>
 

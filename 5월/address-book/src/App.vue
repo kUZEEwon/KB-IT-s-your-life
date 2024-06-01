@@ -1,14 +1,19 @@
 <template>
-  <div>
-    <button 
-    v-for="tab in tabs"
-    :key="tab.index"
-    :class="['tab-button', { active: currentTab === tab }]"
-    @click="currentTab = tab">{{ tab }}</button>
+  <div class="container mt-3">
+    <div>
+      <button 
+        v-for="tab in tabs"
+        :key="tab.index"
+        :class="['btn', 'btn btn-outline-info', 'me-2', 'mb-2', { 'active': currentTab === tab }]"
+        @click="currentTab = tab">{{ tab }}</button>
 
-    <component :is="currentTab" class="tab"/>
+      <br/>
+
+      <component :is="currentTab" class="tab"/>
+    </div>
   </div>
 </template>
+
 
 <script>
 import create from "./components/create.vue";

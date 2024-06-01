@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="container mt-3">
         <h3>지인수정</h3>
     </div>
 </template>

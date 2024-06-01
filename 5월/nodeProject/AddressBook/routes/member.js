@@ -27,6 +27,35 @@ app.post("/memberAdd", function(req,res){
     res.send({"result":result});  
 
 
-})
+});
+
+app.post("/memberRemove", function(req,res){
+    console.log("memberRemove 접속 성공");
+
+    let name = req.body.name;
+
+    //console.log(req.body);
+    console.log(name);
+    
+    let result = memberDao.remove(name);
+    console.log(result);
+
+    res.send({"result":result});  
+
+});
+
+app.post("/memberSelect", function(req, res) {
+    console.log("memberSelect 접속 성공");
+
+    let name = req.body.name;
+
+    console.log(req.body);
+
+    let selectedMember = memberDao.select(name);
+    console.log("Selected member:", selectedMember);
+
+    res.send({ "result": selectedMember });
+});
+
 
 module.exports = app;
