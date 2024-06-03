@@ -37,24 +37,34 @@ app.post("/memberRemove", function(req,res){
     //console.log(req.body);
     console.log(name);
     
-    let result = memberDao.remove(name);
+    const result = memberDao.remove(name);
     console.log(result);
 
     res.send({"result":result});  
 
 });
 
-app.post("/memberSelect", function(req, res) {
+app.post("/memberSelect", (req, res)=> {
     console.log("memberSelect 접속 성공");
 
     let name = req.body.name;
 
     console.log(req.body);
 
-    let selectedMember = memberDao.select(name);
+    const selectedMember = memberDao.select(name);
     console.log("Selected member:", selectedMember);
 
     res.send({ "result": selectedMember });
+});
+
+app.post('/updateMember', (req, res) => {
+    const { name, newData } = req.body;
+    const updated = memberDao.update(name, newData);
+    if (updated) {
+        res.send('Member updated successfully');
+    } else {
+        res.status(404).send('Member not found');
+    }
 });
 
 

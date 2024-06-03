@@ -20,7 +20,7 @@
                     <tr>
                         <th>나이</th>
                         <td>
-                            <input type="number" v-model="age" class="form-control" />
+                            <input v-model="age" class="form-control" />
                         </td>
                     </tr>
                     <tr>
@@ -71,7 +71,7 @@ export default {
 
             let params = {
                 "name": this.name,
-                "age": this.age,
+                "age": parseInt(this.age, 10),
                 "phone": this.phone,
                 "address": this.address,
                 "memo": this.memo
