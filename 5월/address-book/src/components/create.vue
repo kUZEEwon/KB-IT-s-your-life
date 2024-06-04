@@ -66,7 +66,6 @@ export default {
     },
     methods: {
         add() {
-            // alert('add()');
             let url = "http://localhost:3000/memberAdd";
 
             let params = {
