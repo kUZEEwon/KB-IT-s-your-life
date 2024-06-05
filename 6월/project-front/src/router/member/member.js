@@ -1,4 +1,5 @@
 import loginView from "@/views/member/loginView.vue";
+import regi from "@/components/member/resi.vue";
 
 export default [
     {
@@ -6,4 +7,9 @@ export default [
         name: 'login',
         component: loginView
     },
+    {
+        path: "/regi",
+        name:"regi",
+        component:regi
+    }
 ]
