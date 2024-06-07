@@ -3,11 +3,11 @@
         <h2>Board List</h2>
 
         <router-link to="/create">
-            <button>Create New Post</button>
+            <button class="btn btn-primary me-2">Create New Post</button>
         </router-link>
         <br /><br />
 
-        <table class="table-primary">
+        <table class="table table-striped">
             <thead>
                 <tr>
                     <th>id</th>
