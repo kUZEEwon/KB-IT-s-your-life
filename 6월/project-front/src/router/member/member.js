@@ -1,15 +1,16 @@
-import loginView from "@/views/member/loginView.vue";
-import regi from "@/components/member/resi.vue";
+import loginView from '@/views/member/loginView.vue';
+import regi from '@/components/member/regi.vue';
 
-export default [
+export default[
     {
-        path: "/",
+        path: '/',
         name: 'login',
         component: loginView
     },
     {
-        path: "/regi",
-        name:"regi",
-        component:regi
-    }
+        path: '/regi',
+        name: 'regi',
+        component: regi
+    },
+    
 ]

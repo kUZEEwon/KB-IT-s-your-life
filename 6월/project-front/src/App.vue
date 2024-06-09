@@ -1,20 +1,22 @@
-<template lang="">
+<template>
   <div>
-    <Main/>
-
+    
+    <Main />
 
   </div>
 </template>
+
 <script>
-import Main from "@/views/main.vue";
+import Main from '@/views/main.vue';
 
 export default {
-  name:"App",
+  name:'App',
   components:{
     Main
   }
 }
 </script>
-<style lang="">
+
+<style>
   
 </style>

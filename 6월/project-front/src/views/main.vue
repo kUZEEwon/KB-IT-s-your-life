@@ -1,13 +1,17 @@
 <template lang="">
     <div>
-        <router-view/>
+
+        <router-view />
+        
     </div>
 </template>
+
 <script>
 export default {
-    name:'mainView'
+    name:'mainView'    
 }
 </script>
+
 <style lang="">
     
 </style>
