@@ -10,7 +10,7 @@
 3. 직원 클래스
 속성
 - name : String(public)
-- address : String(public)
+- address : String(default)
 - salary :int(protected)
 - rrn : int(private)
 
