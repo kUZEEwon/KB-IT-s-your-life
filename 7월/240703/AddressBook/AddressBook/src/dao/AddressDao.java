@@ -14,12 +14,12 @@ public class AddressDao {
     Scanner sc = new Scanner(System.in);
 
     // list
-    /* private ArrayList<HumanDto> list;*/
-
+//    private ArrayList<HumanDto> list;
 
     public AddressDao() {
-        //  list = new ArrayList<HumanDto>();
+//        list = new ArrayList<HumanDto>();
     }
+
     // CRUD
     public void insert(){
         System.out.println("지인을 추가합니다");
@@ -52,7 +52,6 @@ public class AddressDao {
         }
 
         Singleton s = Singleton.getInstance();
-
         s.list.add(new HumanDto(name, age, phone, address, memo));
     }
     public void delete(){
@@ -64,19 +63,21 @@ public class AddressDao {
             System.out.println("지인의 정보를 찾을 수 없습니다");
             return;
         }
-        Singleton s = Singleton.getInstance();
 
+        Singleton s = Singleton.getInstance();
         HumanDto dto = s.list.get(index);
         s.list.remove(index);
         System.out.println(dto.getName() +  "님의 정보를 삭제하였습니다");
 
     }
     public void select(){
+        Singleton s = Singleton.getInstance();
+
         System.out.print("검색할 지인의 이름 = ");
         String name = sc.next();
 
         ArrayList<HumanDto> findList = new ArrayList<HumanDto>();
-        Singleton s = Singleton.getInstance();
+
         // 동명이인이 있을 경우를 생각해서 새로운 리스트에 추가
         for (HumanDto h : s.list){
             if(name.equals(h.getName())){
@@ -114,6 +115,7 @@ public class AddressDao {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
         Singleton s = Singleton.getInstance();
         HumanDto human = s.list.get(index);
         human.setPhone(phone);

@@ -12,6 +12,7 @@ public class MainClass {
         FileProc fp = new FileProc("addressBook");
         AddressDao dao = new AddressDao();
         fp.read();
+
         // menu
         while (true){
             System.out.println(" << 주소록 >> ");
@@ -46,5 +47,8 @@ public class MainClass {
                     break;
             }
         }
+
     }
 }
+
+

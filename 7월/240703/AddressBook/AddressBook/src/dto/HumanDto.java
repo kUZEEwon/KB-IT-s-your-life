@@ -2,7 +2,7 @@ package dto;
 
 // 항목들
 public class HumanDto {
-    // 이름, 나이, 전화번호, 주소, 메모
+    // 이름, 나이, 전화번호, 주소, 메모     홍길동-24-123-강릉시-친구
     private String name;
     private int age;
     private String phone;
