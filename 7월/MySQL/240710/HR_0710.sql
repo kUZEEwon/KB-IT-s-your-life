@@ -12,10 +12,10 @@
  */
 use 0710과제;
 create table TEAM (
-    team_id INT primary key,
+    team_id DECIMAL(8) primary key,
     location VARCHAR(40),
-    team_name VARCHAR(40),
-    start_date DATE,
+    team_name VARCHAR(40) NOT NULL,
+    start_date TIMESTAMP,
     tel VARCHAR(30),
     homepage VARCHAR(40)
 );
@@ -23,12 +23,12 @@ create table TEAM (
 drop table `PLAYER`;
 
 create table PLAYER (
-    player_id int PRIMARY key,
-    player_name VARCHAR(40),
-    resi_date DATE,
+    player_id DECIMAL(2) PRIMARY key,
+    player_name VARCHAR(40) not null,
+    resi_date TIMESTAMP,
     position VARCHAR(40),
-    height decimal (4,1),
-    team_id INT,
+    height decimal (5,1),
+    team_id DECIMAL(8),
     FOREIGN KEY(team_id) REFERENCES TEAM(team_id)
 );
 
@@ -51,6 +51,11 @@ VALUES
 (5, '곽도규', '2023-02-03', '내야수', 189.2, 1),
 (6, '김동규', '2019-12-18', '외야수', 181.3, 1);
 
+-- 선수를 입력하면 그 선수의 팀 명과 전화번호, 홈페이지가 출력되도록 합니다. 
+--   JOIN 해 보도록 한다.
+SELECT player_name,t.team_name, t.tel, homepage
+FROM player p inner JOIN team t ON p.team_id = t.team_id;
+
 /* 
     온라인 마켓 테이블을 작성하라
     PRODUCT(상품) : 상품번호, 상품명, 상품가격, 상품설명
@@ -65,23 +70,23 @@ VALUES
  */
 
 create Table product (
-    product_id int PRIMARY KEY,
-    product_name VARCHAR(50), 
-    price int,
-    COMMENT VARCHAR(100)
+    product_id DECIMAL(5) PRIMARY KEY,
+    product_name VARCHAR(50) NOT NULL, 
+    price DECIMAL(8) NOT NULL,
+    COMMENT VARCHAR(500)
 );
 
 create TABLE consumer(
-    consumer_id int PRIMARY key,
+    consumer_id DECIMAL(5) PRIMARY key,
     consumer_name VARCHAR(40),
-    age int 
+    age DECIMAL(3)  
 );
 
 create table cart(
-    cart_id int PRIMARY key,
-    consumer_id INT,
-    product_id int,
-    count int,
+    cart_id INT AUTO_INCREMENT PRIMARY key,
+    consumer_id DECIMAL(5),
+    product_id DECIMAL(5),
+    count DECIMAL(3),
     FOREIGN KEY(consumer_id) REFERENCES consumer(consumer_id),
     FOREIGN KEY(product_id) REFERENCES product(product_id)
 );
@@ -105,3 +110,17 @@ INSERT INTO cart (cart_id, consumer_id, product_id, count) VALUES
 (2, 2, 2, 2), -- Jane Smith가 Smartphone 2개 구매
 (3, 3, 3, 1), -- Alice Johnson이 Headphones 1개 구매
 (4, 1, 3, 2); -- John Doe가 Headphones 2개 추가 구매
+
+
+-- 쇼핑한 상품을 출력합니다.
+SELECT 
+    c.consumer_name, 
+    p.product_name, 
+    p.price,
+    ca.count
+FROM product P 
+INNER JOIN cart ca
+    ON p.product_id = ca.product_id
+INNER JOIN consumer c
+    ON c.consumer_id = ca.consumer_id
+ORDER BY c.consumer_name;

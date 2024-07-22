@@ -300,6 +300,19 @@ values(4, '수동', 50);  -- 부모테이블에 없는 값은 추가할 수 없�
 
 select * from emp;
 
+use hr;
+create Table empgroup
+AS
+SELECT department_id as dnum, sum(salary) as dsum, avg(salary) davg
+from employees
+GROUP BY department_id;
+
+create Table emp_dept
+AS
+SELECT employee_id, first_name, salary, department_name
+FROM employees e, departments d
+WHERE e.department_id = d.department_id;
+
 /*
 
 운동부 TABLE을 작성하라.
