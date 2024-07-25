@@ -13,4 +13,16 @@ public class MemberListUI {
             System.out.println(bag.getTel());
             System.out.println("-------------------");
         }
-    } }
+
+
+        System.out.println("===========================");
+        for (int i=0; i<list.size(); i++) {
+            MemberVO bag = list.get(i);
+            System.out.println(bag.getId());
+            System.out.println(bag.getPw());
+            System.out.println(bag.getName());
+            System.out.println(bag.getTel());
+            System.out.println("-------------------");
+        }
+    }
+}

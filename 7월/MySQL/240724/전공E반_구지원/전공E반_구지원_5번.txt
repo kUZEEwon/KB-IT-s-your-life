@@ -1,0 +1,93 @@
+-- -----------------------------------------
+-- 	JDBC문제 5번
+-- -----------------------------------------
+-- 5-1
+public List<CityVO> select(int ID) {
+
+        //SQL문 완성
+        String sql = "select * from city where ID >= ?";
+        PreparedStatement ps = null;
+        ResultSet rs = null;
+        List<CityVO> cityVOList = new ArrayList<>();
+        try {
+            ps = conn.prepareStatement(sql);
+            ps.setInt(1, ID);
+            rs = ps.executeQuery();
+
+
+            while (rs.next()) {
+                CityVO cityVO = new CityVO();
+                cityVO.setID(rs.getInt("ID"));
+                cityVO.setName(rs.getString("Name"));
+                cityVO.setCountryCode(rs.getString("CountryCode"));
+                cityVO.setDistrict(rs.getString("District"));
+                cityVO.setPopulation(rs.getInt("Population"));
+
+                cityVOList.add(cityVO);
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        } finally {
+            if (ps != null) {
+                try {
+                    ps.close();
+                } catch (SQLException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            if (conn != null) {
+                try {
+                    conn.close();
+                } catch (SQLException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+
+            if (rs != null) {
+                try {
+                    rs.close();
+                } catch (SQLException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        }
+        /***********************************************
+         * 구현 코드
+         *
+         *
+         *
+         */
+    return cityVOList;
+    } //select기능 구현
+}
+
+-- 5-2
+
+            //select 기능
+            //5-2.  ID가 4088이상인 도시들의 행이 검색되도록 select메서드를 호출하여
+            //      검색 결과를 출력하는 처리를 완성하시오.
+            //      조건 1) 출력시 지역명은 앞에서부터 4글자만 추출하여 출력
+            //      조건 2) 반복문으로 출력시, for문, fot-each문 중 하나를 선택하여 사용 가능
+
+            /***********************************************
+             * 구현 코드
+             *
+             *
+             *
+             */
+            CityDAO cityDAO2 = new CityDAO();
+            int ID = 4088;
+
+            List<CityVO> list =   cityDAO2.select(ID);
+            System.out.println("전체 도시 수 : " + list.size());
+            System.out.println("------------------------ 도시 목록 ------------------------");
+            for (CityVO city : list) {
+
+
+                System.out.println(city);
+            }
+
+
+
+
+

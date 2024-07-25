@@ -32,6 +32,7 @@ public class MemberDAO {
         ps.close();
         con.close();
     }
+
     public int insert(MemberVO bag) throws Exception {
         // 1. 드라이버(커넥터) 설정
         Class.forName("com.mysql.cj.jdbc.Driver");

@@ -7,7 +7,7 @@
     속도가 빠르다.
     한개의 뷰로 여러개의 테이블을 검색할 수 있다.
  */
-
+SELECT * FROM jobs;
 CREATE VIEW ub_test1
 as 
 SELECT job_id, job_title, max_salary
