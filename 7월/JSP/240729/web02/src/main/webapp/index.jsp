@@ -8,6 +8,7 @@
 <h1><%= "Hello World!" %>
 </h1>
 <br/>
-<a href="login.jsp">로그인</a>
+<a href="want.jsp">가고 싶은 곳 입력</a>
+<a href="city.jsp">도시 정보 입력</a>
 </body>
 </html>
