@@ -1,3 +1,5 @@
+package controller;
+
 import dao.MemberDao;
 import dto.MemberDto;
 import net.sf.json.JSONObject;
@@ -7,6 +9,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 @WebServlet("/Member")
@@ -26,6 +29,7 @@ public class MemberController extends HttpServlet {
         request.setCharacterEncoding("UTF-8");
         response.setContentType("text/html; charset=UTF-8");
 
+        MemberDao dao = MemberDao.getInstance();
         String param = request.getParameter("param");
 
         if (param.equals("login")) {
@@ -37,7 +41,7 @@ public class MemberController extends HttpServlet {
         else if (param.equals("idcheck")) {
            String id= request.getParameter("id");
 
-            MemberDao dao = MemberDao.getInstance();
+
             boolean isS = dao.getId(id);
 
             String msg = "YES";
@@ -58,30 +62,43 @@ public class MemberController extends HttpServlet {
             String name =request.getParameter("name");
             String email =request.getParameter("email");
 
-            MemberDao dao = MemberDao.getInstance();
+//            MemberDao dao = MemberDao.getInstance();
 
             boolean isS = dao.insertMember(new MemberDto(id, pw,name, email,0));
             System.out.println(isS);
             if (isS) {
-                response.sendRedirect("login.jsp");
+               // response.sendRedirect("login.jsp");
+                request.setAttribute("message", "MESSAGE_YES");
+                request.getRequestDispatcher("message.jsp").forward(request, response);
             }
             else {
-                response.sendRedirect("account.jsp");
+                request.setAttribute("message", "MESSAGE_NO");
+                request.getRequestDispatcher("message.jsp").forward(request, response);
             }
         }
         else if (param.equals("loginAf")) {
             String id= request.getParameter("id");
             String pw = request.getParameter("pw");
 
-            MemberDao dao = MemberDao.getInstance();
             MemberDto member =  dao.login(id,pw);
-            if (member != null) {
+            if (member != null && !member.getId().equals("")) {
+                // member가 null이 아니고 id가 빈문자열이 아닐 때
                 // 로그인 성공
                 System.out.println("login success");
+
+                // 세션에 로그인 정보 저장
+                HttpSession session = request.getSession();
+                session.setAttribute("login", member); // 로그인한 사용자 정보 저장
+                session.setMaxInactiveInterval(60 * 60 * 24 * 7); // 세션 유효 시간 설정: 1주일
+
+                request.setAttribute("login", "LOGIN_OK");
+
             }else {
                 System.out.println("login fail");
-            }
+                request.setAttribute("login", "LOGIN_NG");
 
+            }
+            request.getRequestDispatcher("message.jsp").forward(request, response);
         }
     }
 }

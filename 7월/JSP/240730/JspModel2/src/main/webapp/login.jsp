@@ -14,8 +14,9 @@
 <body>
     <h3>login</h3>
     <div class="center">
-        <form action="Member" method="post">
+        <form action="Member?param=loginAf" method="post">
             <input type="hidden" name="param" value="loginAf"/>
+
             <table border="1">
                 <tr>
                     <th>아이디</th>
