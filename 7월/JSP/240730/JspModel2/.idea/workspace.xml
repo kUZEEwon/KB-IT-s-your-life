@@ -5,60 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e944c7b9-02a3-439b-aa5a-8618c90a508f" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/message.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../240731/0731-basic-KB04-MVC.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../240731/web04/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../240731/web04/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../240731/web04/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../240731/web04/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../240731/web04/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../240731/web04/.idea/webContexts.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../240731/web04/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../240731/web04/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../240731/web04/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../240731/web04/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../240731/web04/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../240731/web04/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../240731/web04/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../240731/web04/src/main/java/com/multi/web04/controller/CustomerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../240731/web04/src/main/java/com/multi/web04/controller/DispatcherServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../240731/web04/src/main/java/com/multi/web04/controller/ProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../240731/web04/src/main/java/com/multi/web04/dao/CustomerDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../240731/web04/src/main/java/com/multi/web04/dao/ProductDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../240731/web04/src/main/java/com/multi/web04/vo/CustomerVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../240731/web04/src/main/java/com/multi/web04/vo/ProductVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../240731/web04/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../240731/web04/src/main/webapp/customer.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../240731/web04/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../240731/web04/src/main/webapp/product.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../240731/web04/src/main/webapp/views/customer_result.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../240731/web04/src/main/webapp/views/product_result.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../240731/web04_mvc2.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../240731/web04_mvc2/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../240731/web04_mvc2/src/main/java/com/multi/web04_mvc2/controller/CustomerContoller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../240731/web04_mvc2/src/main/java/com/multi/web04_mvc2/controller/DispatcherServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../240731/web04_mvc2/src/main/java/com/multi/web04_mvc2/controller/ProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../240731/web04_mvc2/src/main/java/com/multi/web04_mvc2/dao/CustomerDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../240731/web04_mvc2/src/main/java/com/multi/web04_mvc2/dao/ProductDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../240731/web04_mvc2/src/main/java/com/multi/web04_mvc2/db/DBClose.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../240731/web04_mvc2/src/main/java/com/multi/web04_mvc2/db/DBConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../240731/web04_mvc2/src/main/java/com/multi/web04_mvc2/dto/CustomerDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../240731/web04_mvc2/src/main/java/com/multi/web04_mvc2/dto/ProductDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../240731/web04_mvc2/src/main/webapp/customer.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../240731/web04_mvc2/src/main/webapp/product.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../240731/web04_mvc2/src/main/webapp/views/customer_list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../240731/web04_mvc2/src/main/webapp/views/customer_result.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../240731/web04_mvc2/src/main/webapp/views/product_list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../240731/web04_mvc2/src/main/webapp/views/product_result.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../8월/240805/spring2_2/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../8월/240805/spring2_2/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../8월/240805/spring2_2/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../8월/240805/spring2_2/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../240729/jsp02/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../240729/jsp02/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MemberController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,9 +35,6 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="PerforceDirect.Settings">
-    <option name="CHARSET" value="없음" />
-  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -112,13 +56,14 @@
     &quot;Tomcat 서버.Tomcat 9.0.91.executor&quot;: &quot;Run&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/koo/Documents/KB-IT-s-your-life/7월/JSP/lib/json-lib-2.4-jdk15.jar&quot;,
+    &quot;last_directory_selection&quot;: &quot;C:/Users/koo/Documents/KB-IT-s-your-life/7월/JSP/240730/JspModel2/src/main/java&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/koo/Documents/KB-IT-s-your-life/7월/JSP/240730/JspModel2/src/main/webapp&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;모듈&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;프로젝트&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.1454219&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;com.poratu.idea.plugins.tomcat.setting.TomcatServersConfigurable&quot;,
@@ -130,8 +75,25 @@
       <recent name="C:\Users\koo\Documents\KB-IT-s-your-life\7월\JSP\240730\JspModel2\src\main\webapp" />
       <recent name="C:\Users\koo\Documents\KB-IT-s-your-life\7월\JSP\240730\JspModel2\src\main\java" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="dao" />
+      <recent name="dto" />
+    </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Bbs_Login_MVC2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Bbs_Login_MVC2" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tomcat 9.0.91" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.91" ALTERNATIVE_JRE_ENABLED="false">
       <option name="COMMON_VM_ARGUMENTS" value="-Dfile.encoding=UTF-8" />
       <option name="UPDATING_POLICY" value="redeploy-artifacts" />
@@ -215,9 +177,7 @@
       </ConfigurationWrapper>
       <method v="2">
         <option name="Make" enabled="true" />
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="Gradle : hello : JspModel2-1.0-SNAPSHOT.war" />
-        </option>
+        <option name="BuildArtifacts" enabled="true" />
       </method>
     </configuration>
   </component>
@@ -238,7 +198,9 @@
       <option name="presentableId" value="Default" />
       <updated>1722321694339</updated>
       <workItem from="1722321695389" duration="7419000" />
-      <workItem from="1722831709114" duration="1003000" />
+      <workItem from="1722831709114" duration="15404000" />
+      <workItem from="1722905050528" duration="6000" />
+      <workItem from="1722905087821" duration="22000" />
     </task>
     <servers />
   </component>

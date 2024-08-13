@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="acd2e7c7-35ba-438f-b86c-e268e4a643a8" name="변경" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../../7월/JSP/240730/JspModel2/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../240805/JspModel2_로그인_게시판(강사님ver).zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240806/springSample1/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240806/springSample1/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240806/springSample1/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240806/springSample1/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240806/springSample1/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240806/springSample1/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240806/springSample1/src/main/java/mul/cam/e/config/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240806/springSample1/src/main/java/mul/cam/e/config/WebAppInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240806/springSample1/src/main/java/mul/cam/e/config/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240806/springSample1/src/main/java/mul/cam/e/controller/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240806/springSample1/src/main/java/mul/cam/e/dto/HumanDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240806/springSample1/src/main/resources/log4j.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240806/springSample1/src/main/webapp/WEB-INF/views/home.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240806/springSample1/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240806/win00/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240806/win00/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240806/win00/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240806/win00/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240806/win00/src/main/java/com/multi/win00/config/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240806/win00/src/main/java/com/multi/win00/config/WebAppInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240806/win00/src/main/java/com/multi/win00/config/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240806/win00/src/main/java/com/multi/win00/controller/BoardController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240806/win00/src/main/java/com/multi/win00/controller/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240806/win00/src/main/java/com/multi/win00/domain/BoardVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240806/win00/src/main/resources/log4j.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240806/win00/src/main/webapp/WEB-INF/views/board.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240806/win00/src/main/webapp/WEB-INF/views/delete.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240806/win00/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240806/win00/src/main/webapp/WEB-INF/views/insert.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240806/win00/src/main/webapp/WEB-INF/views/one.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240806/win00/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240806/win00/src/main/webapp/resources/css/out.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240806/win00/src/main/webapp/resources/img/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240806/win00/src/main/webapp/resources/js/out.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240807/SpringSample2/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240807/SpringSample2/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240807/SpringSample2/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240807/SpringSample2/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240807/SpringSample2/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240807/SpringSample2/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240807/SpringSample2/src/main/java/mul/cam/e/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240807/SpringSample2/src/main/resources/log4j.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240807/SpringSample2/src/main/webapp/WEB-INF/spring/servlet-context.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240807/SpringSample2/src/main/webapp/WEB-INF/views/hello.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240807/SpringSample2/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240807/SpringSample2/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240807/win01/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240807/win01/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240807/win01/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240807/win01/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240807/win01/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240807/win01/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240807/win01/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240807/win01/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240807/win01/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240807/win01/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240807/win01/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240807/win01/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240807/win01/src/main/java/com/multi/win01/config/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240807/win01/src/main/java/com/multi/win01/config/WebAppInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240807/win01/src/main/java/com/multi/win01/config/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240807/win01/src/main/java/com/multi/win01/controller/FinanceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240807/win01/src/main/java/com/multi/win01/controller/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240807/win01/src/main/java/com/multi/win01/domain/FinanceVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240807/win01/src/main/resources/log4j.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240807/win01/src/main/webapp/WEB-INF/views/economy.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240807/win01/src/main/webapp/WEB-INF/views/finance.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240807/win01/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240807/win01/src/main/webapp/WEB-INF/views/invest.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240807/win01/src/main/webapp/WEB-INF/views/money.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240807/win01/src/main/webapp/resources/css/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240807/win01/src/main/webapp/resources/css/out.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240807/win01/src/main/webapp/resources/img/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240807/win01/src/main/webapp/resources/js/out.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../0808-basic-KB05-MVC.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringSample3/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringSample3/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringSample3/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringSample3/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringSample3/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringSample3/.idea/webContexts.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringSample3/src/main/java/mul/cam/e/config/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringSample3/src/main/java/mul/cam/e/config/WebAppInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringSample3/src/main/java/mul/cam/e/config/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringSample3/src/main/java/mul/cam/e/dto/TestBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringSample3/src/main/webapp/WEB-INF/views/hello.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringSample3/src/main/webapp/WEB-INF/views/home.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringSample3/src/main/webapp/WEB-INF/views/info.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringSample4/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringSample4/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringSample4/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringSample4/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringSample4/.idea/webContexts.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringSample4/src/main/java/mul/cam/e/config/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringSample4/src/main/java/mul/cam/e/config/WebAppInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringSample4/src/main/java/mul/cam/e/config/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringSample4/src/main/java/mul/cam/e/controller/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringSample4/src/main/java/mul/cam/e/dto/HumanDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringSample4/src/main/webapp/WEB-INF/views/home.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../win02/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../win02/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../win02/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../win02/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../win02/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../win02/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../win02/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../win02/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../win02/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../win02/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../win02/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../win02/src/main/java/com/multi/spring2/board/controller/BoardController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../win02/src/main/java/com/multi/spring2/board/dao/BoardDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../win02/src/main/java/com/multi/spring2/board/dao/JDBCUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../win02/src/main/java/com/multi/spring2/board/domain/BoardVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../win02/src/main/java/com/multi/spring2/board/service/BoardService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../win02/src/main/java/com/multi/spring2/config/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../win02/src/main/java/com/multi/spring2/config/WebAppInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../win02/src/main/java/com/multi/spring2/config/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../win02/src/main/java/com/multi/spring2/controller/RootController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../win02/src/main/resources/log4j.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../win02/src/main/webapp/WEB-INF/views/board/all_result.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../win02/src/main/webapp/WEB-INF/views/board/board.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../win02/src/main/webapp/WEB-INF/views/board/delete_result.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../win02/src/main/webapp/WEB-INF/views/board/insert_result.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../win02/src/main/webapp/WEB-INF/views/board/one_result.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../win02/src/main/webapp/WEB-INF/views/board/update_result.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../win02/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../win02/src/main/webapp/resources/css/out.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../win02/src/main/webapp/resources/image/board.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../win02/src/main/webapp/resources/image/home.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../win02/src/main/webapp/resources/image/member.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240812/SpringSample1/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240812/SpringSample1/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240812/SpringSample1/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240812/SpringSample1/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240812/SpringSample1/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240812/SpringSample1/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240812/SpringSample1/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240812/SpringSample1/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240812/SpringSample1/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240812/SpringSample1/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240812/SpringSample1/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240812/SpringSample1/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240812/SpringSample1/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240812/SpringSample1/src/main/java/mul/cam/e/config/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240812/SpringSample1/src/main/java/mul/cam/e/config/WebAppInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240812/SpringSample1/src/main/java/mul/cam/e/config/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240812/SpringSample1/src/main/java/mul/cam/e/controller/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240812/SpringSample1/src/main/java/mul/cam/e/dto/HumanDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240812/SpringSample1/src/main/resources/log4j.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240812/SpringSample1/src/main/webapp/WEB-INF/views/home.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240812/SpringSample1/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240812/SpringSample6/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240812/SpringSample6/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240812/SpringSample6/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240812/SpringSample6/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240812/SpringSample6/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240812/SpringSample6/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240812/SpringSample6/src/main/java/mul/cam/e/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240812/SpringSample6/src/main/java/mul/cam/e/controller/MemberController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240812/SpringSample6/src/main/java/mul/cam/e/dto/MemberDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240812/SpringSample6/src/main/resources/log4j.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240812/SpringSample6/src/main/resources/sql/Member.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240812/SpringSample6/src/main/webapp/WEB-INF/spring/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240812/SpringSample6/src/main/webapp/WEB-INF/spring/servlet-context.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240812/SpringSample6/src/main/webapp/WEB-INF/views/hello.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240812/SpringSample6/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240812/SpringSample6/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../7월/JSP/240730/JspModel2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../7월/JSP/240730/JspModel2/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Jsp File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2kXhtYqHeBJS6IVZyAnZYly973u" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Gradle.SpringSample5 빌드.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Tomcat 서버.Tomcat 9.0.91.executor": "Run",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/koo/Documents/KB-IT-s-your-life/8월/Spring/240812/SpringSample5",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\koo\Documents\KB-IT-s-your-life\8월\Spring\240808\SpringSample5\src\main\webapp" />
+      <recent name="C:\Users\koo\Documents\KB-IT-s-your-life\8월\Spring\240808\SpringSample5\src\main\webapp\WEB-INF" />
+      <recent name="C:\Users\koo\Documents\KB-IT-s-your-life\8월\Spring\240808\SpringSample5\src\main\resources" />
+      <recent name="C:\Users\koo\Documents\KB-IT-s-your-life\8월\Spring\240808\SpringSample5\src\main\java\mul\cam\e" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat 9.0.91" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.91" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="BROWSER_ID" value="37cae5b9-e8b2-4949-9172-aafa37fbc09c" />
+      <option name="COMMON_VM_ARGUMENTS" value="-Dfile.encoding=UTF-8" />
+      <option name="UPDATING_POLICY" value="hot-swap-classes" />
+      <deployment>
+        <artifact name="Gradle : mul.cam : e-1.0-SNAPSHOT.war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="ada6ba57-7a3b-4ff9-94fa-18b45b74ad95" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="2117" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Gradle : mul.cam : e-1.0-SNAPSHOT.war" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="디폴트 작업">
+      <changelist id="acd2e7c7-35ba-438f-b86c-e268e4a643a8" name="변경" comment="" />
+      <created>1723436045598</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1723436045598</updated>
+      <workItem from="1723436046631" duration="3423000" />
+      <workItem from="1723439540009" duration="1974000" />
+      <workItem from="1723444435343" duration="27000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
