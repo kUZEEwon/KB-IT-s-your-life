@@ -77,7 +77,7 @@ import java.util.List;
         }
 
         @PostMapping("/delete")
-            public ModelAndView delete(@RequestParam("id") String id) {
+        public ModelAndView delete(@RequestParam("id") String id) {
             String result = memberService.delete(id);
             System.out.println("--------->> " + result);
             ModelAndView modelAndView = new ModelAndView();
