@@ -18,9 +18,9 @@ public class CityService {
     }
 
     public String insert(CityVO cityVO) {
-        String result = "Success!";
+        String result = "Fail!";
         if(cityDAO.insert(cityVO) == 1){
-            result = "Fail!";
+            result = "Success!";
         };
         return result;
     }
