@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.util.Date;
 import java.util.List;
@@ -18,11 +20,11 @@ import java.util.List;
 @Controller
 public class MemberController {
     private static final Logger log = LoggerFactory.getLogger(MemberController.class);
-    private final MemberService service;
+
     private final MemberService memberService;
 
-    public MemberController(MemberService service, MemberService memberService) {
-        this.service = service;
+    public MemberController(MemberService memberService) {
+
         this.memberService = memberService;
     }
 
@@ -47,17 +49,20 @@ public class MemberController {
     }
 
     @PostMapping("loginAf.do")
-    public String loginAf(MemberDto memberDto, HttpSession session) {
+    public String loginAf(MemberDto memberDto, HttpServletRequest request) { // IOC
         System.out.println("MemberController loginAf " + new Date());
-        int result = memberService.login(memberDto);
+        MemberDto result = memberService.login(memberDto);
         System.out.println("--------->> " + result);
-        if (result == 1){
-            session.setAttribute("login_id", memberDto.getId());
-            return "member/login_ok";
-        }else{
-            return "member/login_no";
-        }
 
+        if (result != null && !result.getId().equals("")){ // 로그인 성공
+            request.getSession().setAttribute("login", result);
+            return "redirect:/bbslist.do";
+        }
+        else{
+            // return "member/login"; view 로 이동
+            // login.do로 보내버리기 ( 컨트롤러로 이동 )
+            return "redirect:/login.do";
+        }
     }
 
     @GetMapping("regi.do")

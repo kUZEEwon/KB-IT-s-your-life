@@ -11,7 +11,7 @@ import java.util.List;
 public interface MemberDao {
     public List<MemberDto> allMember();
 
-    public int login(MemberDto memberDto);
+    public MemberDto login(MemberDto memberDto);
 
     int regi(MemberDto memberDto);
 

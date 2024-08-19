@@ -25,7 +25,7 @@ public class MemberService {
         return cnt>0;
     }
 
-    public int login(MemberDto memberDto) {
+    public MemberDto login(MemberDto memberDto) {
         return memberDao.login(memberDto);
     }
 

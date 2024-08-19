@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>로그인</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script> <!-- jQuery Cookie 플러그인 추가 -->
     <link rel="stylesheet" href="../resources/css/styles.css">
 </head>
 <body>
@@ -36,5 +38,29 @@
         </table>
     </form>
 </div>
+
+<script>
+    $(document).ready(function() {
+        let user_id = $.cookie("user_id");
+        if (user_id != null) {
+            // cookie가 있을 때
+            $("#id").val(user_id);
+            $("#chk_saveid").prop("checked", true);
+        }
+
+        $("#chk_saveid").click(function() {
+            if ($("#chk_saveid").is(":checked")) {
+                if ($("#id").val().trim() === "") {
+                    alert("아이디를 입력하세요");
+                    $("#chk_saveid").prop("checked", false);
+                } else {
+                    $.cookie("user_id", $("#id").val().trim(), { expires: 7 }); // 7일 동안 유효한 쿠키 설정
+                }
+            } else { // checkbox가 false
+                $.removeCookie("user_id"); // 쿠키 삭제
+            }
+        });
+    });
+</script>
 </body>
 </html>

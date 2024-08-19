@@ -18,8 +18,9 @@
 
     <select id="login"
             parameterType="mul.cam.e.dto.MemberDto"
-            resultType="int">
-        select count(id) from member
+            resultType="mul.cam.e.dto.MemberDto">
+        select id, name, email, auth
+        from member
         where id = #{id} and pw = #{pw}
     </select>
 
