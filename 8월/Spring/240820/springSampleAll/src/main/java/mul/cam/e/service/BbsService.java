@@ -43,4 +43,12 @@ public class BbsService {
     public int bbsupdate(BbsDto bbsDto) {
         return bbsDao.bbsupdate(bbsDto);
     }
+
+    public boolean bbsanswer(BbsDto dto)
+    {
+        bbsDao.bbsanswerUpdate(dto);
+        int n = bbsDao.bbsanswerInsert(dto);
+
+        return n>0?true:false;
+    }
 }

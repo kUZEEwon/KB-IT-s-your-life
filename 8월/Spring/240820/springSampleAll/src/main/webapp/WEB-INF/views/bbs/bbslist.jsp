@@ -1,6 +1,7 @@
 <%@ page import="java.util.List" %>
 <%@ page import="mul.cam.e.dto.BbsDto" %>
 <%@ page import="mul.cam.e.dto.BbsParam" %>
+<%@ page import="mul.cam.e.util.BbsUtil" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <%
@@ -39,7 +40,7 @@
 
 <div class="container mt-4">
     <h2 class="text-center">게시판</h2>
-
+    <%--<img src="../images/a0.png"/>--%>
     <div class="center mt-4">
         <table class="table table-hover">
             <thead>
@@ -58,19 +59,17 @@
             <% } else {
                 for (int i = 0; i < bbslist.size(); i++) {
                     BbsDto bbs = bbslist.get(i);
-                    String title = bbs.getTitle();
-                    int maxLength = 30; // 최대 길이 설정
-                    if (title.length() > maxLength) {
-                        title = title.substring(0, maxLength) + "...";
-                    }
             %>
             <tr>
                 <td><%= i + 1 %></td>
+
                 <td>
                     <a href="bbsdetail.do?seq=<%= bbs.getSeq() %>">
-                        <%= title %>
+                        <%=BbsUtil.arrow(bbs.getDepth())%> &nbsp;
+                            <%= BbsUtil.TitleDot(bbs.getTitle()) %>
                     </a>
                 </td>
+
                 <td><%= bbs.getReadcount() %></td>
                 <td><%= bbs.getId() %></td>
             </tr>

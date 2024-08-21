@@ -19,4 +19,7 @@ public interface BbsDao {
     BbsDto bbsdetail(int seq);
     int bbsdelete(int seq);
     int bbsupdate(BbsDto bbsDto);
+
+    int bbsanswerUpdate(BbsDto bbsDto);
+    int bbsanswerInsert(BbsDto bbsDto);
 }

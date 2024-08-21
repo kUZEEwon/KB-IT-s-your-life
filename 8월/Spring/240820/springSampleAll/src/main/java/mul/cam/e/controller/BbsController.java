@@ -121,4 +121,22 @@ public class BbsController {
             return "redirect:/bbs/bbsupdate.do?seq=" + bbsDto.getSeq();
         }
     }
+
+    @GetMapping ("/bbsanswer.do")
+    public String bbsanswer(Model model, int seq) {
+        log.info("BbsController bbsanswer " + new Date());
+        BbsDto dto = service.bbsdetail(seq);
+        model.addAttribute("bbs", dto);
+        return "bbs/bbsanswer";
+    }
+
+    @PostMapping("/bbsanswerAf.do")
+    public String bbsanswerAf(Model model, BbsDto dto) {
+        boolean result = service.bbsanswer(dto);
+        if(!result) {
+            model.addAttribute("seq", dto.getSeq());
+            return "forward:/bbs/bbsanswer.do";
+        }
+        return "redirect:/bbs/bbslist.do";
+    }
 }

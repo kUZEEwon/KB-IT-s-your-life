@@ -67,5 +67,21 @@
         WHERE seq = #{seq}
     </update>
 
+    <!-- 답글 -->
+    <update id="bbsanswerUpdate" parameterType="mul.cam.e.dto.BbsDto">
+        update bbs
+        set step=step+1
+        where ref = (select ref from (select ref from bbs a where seq=#{seq}) A)
+          and step > (select step from (select step from bbs b where seq=#{seq}) B);
+    </update>
+
+    <!-- insert -->
+    <insert id="bbsanswerInsert" parameterType="mul.cam.e.dto.BbsDto">
+        insert into bbs(id, ref, step, depth, title, content, wdate, del, readcount)
+        values(#{id}, (select ref from bbs a where seq=#{seq}),
+               (select step from bbs b where seq=#{seq}) + 1,
+               (select depth from bbs c where seq=#{seq}) + 1,
+               #{title}, #{content}, now(), 0, 0)
+    </insert>
 
 </mapper>

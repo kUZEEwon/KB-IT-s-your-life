@@ -46,6 +46,8 @@
         </div>
         <div class="card-footer text-center">
             <a href="bbslist.do" class="btn btn-primary">목록으로 돌아가기</a>
+            <%-- 답글 버튼 --%>
+            <a href="bbsanswer.do?seq=${bbsdetail.seq}" class="btn btn-success">답글</a>
             <!-- 수정 버튼 -->
             <a href="bbsupdate.do?seq=${bbsdetail.seq}" class="btn btn-warning">수정</a>
             <!-- 삭제 버튼 -->
