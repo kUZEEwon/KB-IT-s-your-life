@@ -2,6 +2,7 @@ package mul.cam.e.service;
 
 import mul.cam.e.dao.BbsDao;
 
+import mul.cam.e.dto.BbsCommentDto;
 import mul.cam.e.dto.BbsDto;
 import mul.cam.e.dto.BbsParam;
 import org.springframework.stereotype.Service;
@@ -49,6 +50,26 @@ public class BbsService {
         bbsDao.bbsanswerUpdate(dto);
         int n = bbsDao.bbsanswerInsert(dto);
 
+        return n>0?true:false;
+    }
+
+    public boolean bbscommentInsert(BbsCommentDto dto){
+        int n = bbsDao.bbscommentInsert(dto);
+        return n>0?true:false;
+    }
+
+    public List<BbsCommentDto> bbscommentAll(int bbsSeq)
+    {
+        return bbsDao.bbscommentAll(bbsSeq);
+    }
+
+    public boolean bbscommentUpdate(BbsCommentDto dto){
+        int n = bbsDao.bbscommentUpdate(dto);
+        return n>0?true:false;
+    }
+
+    public boolean bbscommentDelete(BbsCommentDto dto){
+        int n = bbsDao.bbscommentDelete(dto);
         return n>0?true:false;
     }
 }

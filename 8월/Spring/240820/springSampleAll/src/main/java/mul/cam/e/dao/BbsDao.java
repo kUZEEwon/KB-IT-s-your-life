@@ -1,5 +1,6 @@
 package mul.cam.e.dao;
 
+import mul.cam.e.dto.BbsCommentDto;
 import mul.cam.e.dto.BbsDto;
 import mul.cam.e.dto.BbsParam;
 import org.apache.ibatis.annotations.Mapper;
@@ -22,4 +23,9 @@ public interface BbsDao {
 
     int bbsanswerUpdate(BbsDto bbsDto);
     int bbsanswerInsert(BbsDto bbsDto);
+
+    int bbscommentInsert(BbsCommentDto dto);
+    List<BbsCommentDto> bbscommentAll(int bbsSeq);
+    int bbscommentUpdate(BbsCommentDto dto);
+    int bbscommentDelete(BbsCommentDto dto);
 }

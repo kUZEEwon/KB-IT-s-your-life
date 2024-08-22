@@ -1,5 +1,6 @@
 package mul.cam.e.controller;
 
+import mul.cam.e.dto.BbsCommentDto;
 import mul.cam.e.dto.BbsDto;
 import mul.cam.e.dto.BbsParam;
 import mul.cam.e.service.BbsService;
@@ -75,8 +76,11 @@ public class BbsController {
     @GetMapping("/bbsdetail.do")
     public String bbsdetail(Model model,int seq) {
         log.info("BbsController bbsdetail " + new Date());
-        BbsDto list = service.bbsdetail(seq);
-        model.addAttribute("bbsdetail", list);
+        BbsDto bbslist = service.bbsdetail(seq);
+        model.addAttribute("bbsdetail", bbslist);
+
+        List<BbsCommentDto> commentDto = service.bbscommentAll(seq);
+        model.addAttribute("commentDto", commentDto);
 
         return "bbs/bbsdetail";
     }
@@ -138,5 +142,41 @@ public class BbsController {
             return "forward:/bbs/bbsanswer.do";
         }
         return "redirect:/bbs/bbslist.do";
+    }
+
+    @PostMapping("/bbscomment.do")
+    public String bbscomment(Model model, BbsCommentDto commentDto) {
+        log.info("BbsController bbscomment " + new Date());
+        boolean result = service.bbscommentInsert(commentDto);
+        if(!result) {
+            System.out.println("댓글 달기 실패함.");
+        }
+        return "redirect:/bbs/bbsdetail.do?seq=" + commentDto.getBbsSeq();
+    }
+
+    @PostMapping("/bbscommentUpdate.do")
+    public String bbscommentUpdate(@RequestParam("seq") int commentSeq, @RequestParam("comment") String newComment, @RequestParam("bbsSeq") int bbsSeq) {
+        log.info("BbsController bbscommentUpdate " + new Date());
+        BbsCommentDto commentDto = new BbsCommentDto();
+        commentDto.setSeq(commentSeq);
+        commentDto.setComment(newComment);
+        commentDto.setBbsSeq(bbsSeq);
+        boolean result = service.bbscommentUpdate(commentDto);
+        if (!result) {
+            System.out.println("댓글 수정 실패함.");
+        }
+        return "redirect:/bbs/bbsdetail.do?seq=" + bbsSeq;
+    }
+
+    @GetMapping("/bbscommentDelete.do")
+    public String bbscommentDelete(Model model, BbsCommentDto commentDto) {
+        log.info("BbsController bbscommentDelete " + new Date());
+        int seq = commentDto.getBbsSeq();
+        boolean result = service.bbscommentDelete(commentDto);
+        if (!result) {
+            System.out.println("댓글 삭제 실패함.");
+        }
+
+        return "redirect:/bbs/bbsdetail.do?seq=" + seq;
     }
 }

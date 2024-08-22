@@ -84,4 +84,32 @@
                #{title}, #{content}, now(), 0, 0)
     </insert>
 
+    <!-- 댓글 쓰기 -->
+    <insert id="bbscommentInsert" parameterType="mul.cam.e.dto.BbsCommentDto">
+        insert into bbscomment(bbsSeq, id, wdate, comment)
+        values (#{bbsSeq}, #{id}, now(), #{comment})
+    </insert>
+    
+    <!-- 댓글 불러오기 -->
+    <select id="bbscommentAll" parameterType="Integer"
+            resultType="mul.cam.e.dto.BbsCommentDto">
+        select * from bbscomment
+        where bbsSeq = #{bbsSeq}
+        order by wdate desc
+    </select>
+
+    <!-- 댓글 수정하기 -->
+    <update id="bbscommentUpdate" parameterType="mul.cam.e.dto.BbsCommentDto">
+        UPDATE bbscomment
+        SET
+            wdate = now(),
+            comment = #{comment}
+        WHERE seq = #{seq}
+    </update>
+
+    <!-- 댓글 삭제 -->
+    <delete id="bbscommentDelete" parameterType="mul.cam.e.dto.BbsCommentDto">
+        delete from bbscomment
+        where seq = #{seq}
+    </delete>
 </mapper>
