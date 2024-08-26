@@ -35,6 +35,24 @@
             justify-content: center;
         }
     </style>
+    <style>
+        /* 기본 링크 스타일 */
+        a {
+            text-decoration: none; /* 밑줄 제거 */
+            color: black; /* 링크 색상 변경 */
+        }
+
+        /* 링크에 마우스를 올렸을 때 스타일 */
+        a:hover {
+            color: darkgray; /* 마우스 오버 시 링크 색상 변경 */
+        }
+
+
+        /* 링크가 활성화된 상태의 스타일 */
+        a:active {
+            color: red; /* 클릭 중인 링크 색상 변경 */
+        }
+    </style>
 </head>
 <body>
 

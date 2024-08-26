@@ -1,0 +1,34 @@
+package mul.cam.e.security;
+
+import lombok.AllArgsConstructor;
+import mul.cam.e.config.WebConfig;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Import;
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.web.SecurityFilterChain;
+
+@Import(WebConfig.class)
+@Configuration
+@EnableWebSecurity
+@AllArgsConstructor
+public class SecurityConfig {
+// WEBconfig가 호출되면 자동적으로 생성
+
+    @Bean
+    public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
+        // filter
+        http.csrf(csrf -> csrf.disable()) // csrf로 사용하지 않겠다!
+                .authorizeRequests(authorizeHttpRequests -> authorizeHttpRequests
+                        .antMatchers("/admin/**").hasRole("ADMIN")
+                        .antMatchers("/user/**").hasRole("USER")
+                        .antMatchers("/**").permitAll());//( 이것 외의 모든 경로를 모든 사람들이 접근 가능하다. )
+
+        // login form
+        http.formLogin()
+                .successHandler(new LoginSuccessHandler());
+
+        //
+    }
+}

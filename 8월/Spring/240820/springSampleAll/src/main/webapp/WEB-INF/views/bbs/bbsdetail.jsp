@@ -127,6 +127,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/3.0.1/js.cookie.min.js"></script>
     <script>
         $(document).ready(function () {
+            // 동기식으로 불러오기 위해서 사용함
+            // 문서를 전부 다 읽어들인 후에 작동!
+
             // 댓글 수정 버튼 클릭 시 호출될 함수
             function saveComment(commentSeq, bbsSeq) {
                 // 댓글 내용 가져오기
@@ -136,11 +139,12 @@
                 $.ajax({
                     url: '/bbs/bbscommentUpdate.do',
                     type: 'POST',
-                    data: {
+                    contentType: 'application/json', // JSON 형식으로 전송
+                    data: JSON.stringify({
                         seq: commentSeq,
                         comment: commentInput,
                         bbsSeq: bbsSeq
-                    },
+                    }),
                     success: function (response) {
                         // 댓글 수정 성공 후 페이지를 리다이렉트
                         window.location.href = '/bbs/bbsdetail.do?seq=' + bbsSeq;

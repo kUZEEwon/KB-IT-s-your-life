@@ -154,19 +154,19 @@ public class BbsController {
         return "redirect:/bbs/bbsdetail.do?seq=" + commentDto.getBbsSeq();
     }
 
+
     @PostMapping("/bbscommentUpdate.do")
-    public String bbscommentUpdate(@RequestParam("seq") int commentSeq, @RequestParam("comment") String newComment, @RequestParam("bbsSeq") int bbsSeq) {
+    public String bbscommentUpdate(@RequestBody BbsCommentDto commentDto) {
         log.info("BbsController bbscommentUpdate " + new Date());
-        BbsCommentDto commentDto = new BbsCommentDto();
-        commentDto.setSeq(commentSeq);
-        commentDto.setComment(newComment);
-        commentDto.setBbsSeq(bbsSeq);
+
         boolean result = service.bbscommentUpdate(commentDto);
         if (!result) {
             System.out.println("댓글 수정 실패함.");
         }
-        return "redirect:/bbs/bbsdetail.do?seq=" + bbsSeq;
+
+        return "redirect:/bbs/bbsdetail.do?seq=" + commentDto.getBbsSeq();
     }
+
 
     @GetMapping("/bbscommentDelete.do")
     public String bbscommentDelete(Model model, BbsCommentDto commentDto) {
