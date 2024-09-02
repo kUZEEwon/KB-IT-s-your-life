@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="74f18b7f-24cf-4947-a385-1325e2865418" name="변경" comment="">
+      <change afterPath="$PROJECT_DIR$/../../240826/0826-basic-KB05-Security2.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/springSecurtiy/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/springSecurtiy/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/springSecurtiy/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/springSecurtiy/.idea/webContexts.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/springSecurtiy/src/main/webapp/WEB-INF/views/admin/page.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/springSecurtiy/src/main/webapp/WEB-INF/views/home.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/springSecurtiy/src/main/webapp/WEB-INF/views/secu/loginPage.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/springSecurtiy/src/main/webapp/WEB-INF/views/user/page.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2-답안/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2-답안/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2-답안/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2-답안/.idea/description.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2-답안/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2-답안/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2-답안/.idea/project-template.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2-답안/.idea/template-meta.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2-답안/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2-답안/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2-답안/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2-답안/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2-답안/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2-답안/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2-답안/src/main/java/org/scoula/config/RootConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2-답안/src/main/java/org/scoula/config/ServletConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2-답안/src/main/java/org/scoula/config/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2-답안/src/main/java/org/scoula/controller/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2-답안/src/main/java/org/scoula/controller/SecurityController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2-답안/src/main/java/org/scoula/exception/CommonExceptionAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2-답안/src/main/java/org/scoula/security/account/domain/AuthVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2-답안/src/main/java/org/scoula/security/account/domain/CustomUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2-답안/src/main/java/org/scoula/security/account/domain/MemberVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2-답안/src/main/java/org/scoula/security/account/mapper/UserDetailsMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2-답안/src/main/java/org/scoula/security/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2-답안/src/main/java/org/scoula/security/config/SecurityInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2-답안/src/main/java/org/scoula/security/service/CustomUserDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2-답안/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2-답안/src/main/resources/log4j.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2-답안/src/main/resources/log4jdbc.log4j2.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2-답안/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2-답안/src/main/resources/org/scoula/security/account/mapper/UserDetailsMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2-답안/src/main/webapp/WEB-INF/views/custom404.jsp.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2-답안/src/main/webapp/WEB-INF/views/error_page.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2-답안/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2-답안/src/main/webapp/WEB-INF/views/security/admin.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2-답안/src/main/webapp/WEB-INF/views/security/all.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2-답안/src/main/webapp/WEB-INF/views/security/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2-답안/src/main/webapp/WEB-INF/views/security/logout.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2-답안/src/main/webapp/WEB-INF/views/security/member.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2-답안/src/test/java/org/scoula/config/RootConfigTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2-답안/src/test/java/org/scoula/persistence/JDBCTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2-답안/src/test/resources/log4j.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2_문제/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2_문제/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2_문제/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2_문제/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2_문제/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2_문제/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2_문제/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2_문제/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2_문제/src/main/java/org/scoula/config/RootConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2_문제/src/main/java/org/scoula/config/ServletConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2_문제/src/main/java/org/scoula/config/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2_문제/src/main/java/org/scoula/controller/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2_문제/src/main/java/org/scoula/controller/SecurityController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2_문제/src/main/java/org/scoula/exception/CommonExceptionAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2_문제/src/main/java/org/scoula/security/account/domain/AuthVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2_문제/src/main/java/org/scoula/security/account/domain/CustomUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2_문제/src/main/java/org/scoula/security/account/domain/MemberVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2_문제/src/main/java/org/scoula/security/account/mapper/UserDetailsMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2_문제/src/main/java/org/scoula/security/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2_문제/src/main/java/org/scoula/security/config/SecurityInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2_문제/src/main/java/org/scoula/security/service/CustomUserDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2_문제/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2_문제/src/main/resources/log4j.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2_문제/src/main/resources/log4jdbc.log4j2.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2_문제/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2_문제/src/main/resources/org/scoula/security/account/mapper/UserDetailsMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2_문제/src/main/webapp/WEB-INF/views/custom404.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2_문제/src/main/webapp/WEB-INF/views/error_page.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2_문제/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2_문제/src/main/webapp/WEB-INF/views/security/admin.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2_문제/src/main/webapp/WEB-INF/views/security/all.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2_문제/src/main/webapp/WEB-INF/views/security/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2_문제/src/main/webapp/WEB-INF/views/security/logout.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2_문제/src/main/webapp/WEB-INF/views/security/member.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2_문제/src/test/java/org/scoula/config/RootConfigTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2_문제/src/test/java/org/scoula/persistence/JDBCTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240826/spring_security2-2_문제/src/test/resources/log4j.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240828/SwaggerTest/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240828/SwaggerTest/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240828/SwaggerTest/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240828/SwaggerTest/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240828/SwaggerTest/src/main/java/mul/cam/e/config/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240828/SwaggerTest/src/main/java/mul/cam/e/config/SwaggerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240828/SwaggerTest/src/main/java/mul/cam/e/config/WebAppInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240828/SwaggerTest/src/main/java/mul/cam/e/config/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240828/SwaggerTest/src/main/java/mul/cam/e/controller/SwaggerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240828/SwaggerTest/src/main/java/mul/cam/e/dto/MemberDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../240828/SwaggerTest/src/main/resources/log4j.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringAxiosJson/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringAxiosJson/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringAxiosJson/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringAxiosJson/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringAxiosJson/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringAxiosJson/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringAxiosJson/.idea/webContexts.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringAxiosJson/src/main/java/mul/cam/e/config/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringAxiosJson/src/main/java/mul/cam/e/config/WebAppInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringAxiosJson/src/main/java/mul/cam/e/config/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringAxiosJson/src/main/java/mul/cam/e/controller/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringAxiosJson/src/main/java/mul/cam/e/dto/Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringAxiosJson/src/main/webapp/WEB-INF/views/hello.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringAxiosJson/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config/WebAppInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../config/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mul/cam/e/config/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mul/cam/e/config/SecurityInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mul/cam/e/config/WebAppInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mul/cam/e/config/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mul/cam/e/controller/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mul/cam/e/jwt/JwtTokenFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mul/cam/e/jwt/JwtTokenProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mul/cam/e/security/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mul/cam/e/security/SecurityService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mul/cam/e/security/SecurityUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../240826/springSecurtiy/src/main/java/mul/cam/e/controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../240826/springSecurtiy/src/main/java/mul/cam/e/controller/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../240826/springSecurtiy/src/main/java/mul/cam/e/security/LoginSuccessHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../240826/springSecurtiy/src/main/java/mul/cam/e/security/LoginSuccessHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../240826/springSecurtiy/src/main/java/mul/cam/e/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../240826/springSecurtiy/src/main/java/mul/cam/e/security/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../240826/springSecurtiy/src/main/java/mul/cam/e/service/SecurityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../240826/springSecurtiy/src/main/java/mul/cam/e/service/SecurityService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../240826/springSecurtiy/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../240826/springSecurtiy/src/main/webapp/index.jsp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="e" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2lJu9gsPNEJDfsgaJgEIjQ6J8C5" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.springSecurityJwt 빌드.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Tomcat 서버.Tomcat 9.0.91.executor": "Run",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_directory_selection": "C:/Users/koo/Documents/KB-IT-s-your-life/8월/Spring/240829/springSecurityJwt/src/main/java/mul/cam/e",
+    "last_opened_file_path": "D:/codingTest/week6",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.poratu.idea.plugins.tomcat.setting.TomcatServersConfigurable",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\koo\Documents\KB-IT-s-your-life\8월\Spring\240829\springSecurityJwt\src\main\resources" />
+      <recent name="C:\Users\koo\Documents\KB-IT-s-your-life\8월\Spring\240829\springSecurityJwt\src\main\java\mul\cam\e" />
+      <recent name="C:\Users\koo\Documents\KB-IT-s-your-life\8월\Spring\240829\springSecurityJwt\src\main\java\mul\cam\e\config" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="mul.cam.e.security" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="springSecurityJwt" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="springSecurityJwt" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat 9.0.91" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.91" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="$PROJECT_DIR$/../../../../../../../../Program Files/Java/jdk-17">
+      <option name="OPEN_IN_BROWSER" value="false" />
+      <option name="BROWSER_ID" value="37cae5b9-e8b2-4949-9172-aafa37fbc09c" />
+      <option name="COMMON_VM_ARGUMENTS" value="-Dfile.encoding=UTF-8" />
+      <option name="UPDATING_POLICY" value="hot-swap-classes" />
+      <deployment>
+        <artifact name="Gradle : mul.cam : e-1.0-SNAPSHOT.war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="4a446962-d917-480c-9f65-49adc13cace5" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="4922" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Gradle : mul.cam : e-1.0-SNAPSHOT.war" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="디폴트 작업">
+      <changelist id="74f18b7f-24cf-4947-a385-1325e2865418" name="변경" comment="" />
+      <created>1724910354520</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1724910354520</updated>
+      <workItem from="1724910355575" duration="7548000" />
+      <workItem from="1724920002722" duration="1454000" />
+      <workItem from="1724984580498" duration="12000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
