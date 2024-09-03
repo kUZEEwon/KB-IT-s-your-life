@@ -6,16 +6,24 @@ import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.stereotype.Component;
+import org.springframework.web.filter.OncePerRequestFilter;
 
 import javax.annotation.PostConstruct;
+import javax.servlet.FilterChain;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 import java.util.Base64;
 import java.util.Date;
 import java.util.List;
 
 // 토큰을 발행하고 받은 토큰을 분석하는 클래스
+
 @Component
 public class JwtTokenProvider {
 
@@ -55,7 +63,7 @@ public class JwtTokenProvider {
 
     // JWT 토큰에서 인증 정보 조회
     public Authentication getAuthentication(String token) {
-        UserDetails userDetails = userService.loadUserByUsername(token);
+        UserDetails userDetails = userService.loadUserByUsername(getUserInfo(token));
         return new UsernamePasswordAuthenticationToken(userDetails, "", userDetails.getAuthorities());
     }
 
@@ -78,3 +86,5 @@ public class JwtTokenProvider {
         return Jwts.parser().setSigningKey(securityKey).parseClaimsJws(token).getBody().getSubject();
     }
 }
+
+

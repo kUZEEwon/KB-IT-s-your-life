@@ -8,6 +8,5 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface MemberDao {
 
-    SecurityUser findByUsername(String username); // get member
-
+    SecurityUser findByUsername(String username);
 }

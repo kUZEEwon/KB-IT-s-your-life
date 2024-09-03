@@ -7,9 +7,7 @@
     <select id="findByUsername" parameterType="String" resultType="mul.cam.e.security.SecurityUser">
         select username, password, email
         from tbl_member
-        where username = #{username};
+        where username=#{username}
     </select>
-
-
 
 </mapper>

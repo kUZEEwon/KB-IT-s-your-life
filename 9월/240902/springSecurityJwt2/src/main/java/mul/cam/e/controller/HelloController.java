@@ -11,9 +11,9 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Locale;
@@ -26,6 +26,7 @@ public class HelloController {
 
     private final JwtTokenProvider jwtTokenProvider;
     private final AuthenticationManagerBuilder authenticationManagerBuilder;
+
     private final MemberService service;
 
     public HelloController(JwtTokenProvider jwtTokenProvider, AuthenticationManagerBuilder authenticationManagerBuilder, MemberService service) {
@@ -41,10 +42,10 @@ public class HelloController {
         return "home";
     }
 
-
     @PostMapping("/test")
-    public String test(){
-        log.info("HelloController test {}");
+    public String test(@RequestBody SecurityUser user){
+        log.info("HelloController test");
+        log.info("username : " + user.getUsername());
 
         return "test success";
     }
@@ -55,12 +56,12 @@ public class HelloController {
         log.info(user.toString());
 
         SecurityUser mem = service.findByUsername(user.getUsername());
-        BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
 
+        BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
         // login 실패
         if(!encoder.matches(user.getPassword(), mem.getPassword())){
-            System.out.println("아이디나 패스워드가 틀렸습니다.");
-            return "login Fail";
+            System.out.println("아이디나 패스워드가 틀렸습니다");
+            return "login_fail";
         }
 
         // login 성공
@@ -77,8 +78,6 @@ public class HelloController {
 
         return token;     // <- token or ""
     }
-
-
 
 }
 

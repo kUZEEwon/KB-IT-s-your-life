@@ -16,6 +16,7 @@ import javax.sql.DataSource;
 @Configuration
 @MapperScan("mul.cam.e")
 public class AppConfig {
+
     @Bean
     public DataSource dataSource(){
         System.out.println("~~~ AppConfig dataSource()");

@@ -11,17 +11,15 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 import org.springframework.web.cors.CorsConfiguration;
-import org.springframework.web.cors.CorsConfigurationSource;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 import org.springframework.web.filter.CorsFilter;
 
-import java.util.Arrays;
 import java.util.Date;
 import java.util.stream.Collectors;
-import org.springframework.context.annotation.Import;
 
 @Import(WebConfig.class)
 @Configuration
@@ -41,16 +39,17 @@ public class SecurityConfig {
 
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
-        // CORS 설정 적용
-        http.cors(cors -> cors.configurationSource(corsConfigurationSource()));
 
         // 1.권한 filter
         http.csrf(csrf -> csrf.disable())
+                .addFilterBefore(corsFilter(), UsernamePasswordAuthenticationFilter.class)
+
                 .authorizeRequests(authorizeHttpRequests -> authorizeHttpRequests
                   //      .antMatchers("/admin/**").hasRole("ADMIN")
                   //      .antMatchers("/user/**").hasRole("USER")
-                        .antMatchers("/test").authenticated()   // (토큰)증명
-                        .antMatchers("/home", "/login").permitAll() );   // (무조건)허용
+                  //      .antMatchers("/test").authenticated()   // (토큰)증명
+                        .antMatchers("/home", "/login").permitAll()
+                        .anyRequest().authenticated());   // (무조건)허용
 
         // 2. 세션을 사용하지 않음
         http.sessionManagement((sessionManagement)
@@ -60,52 +59,37 @@ public class SecurityConfig {
         http.addFilterBefore(jwtTokenFilter, UsernamePasswordAuthenticationFilter.class);
 
         // 4. login form
-        /*http.formLogin()
-                .loginProcessingUrl("/login")
-                .usernameParameter("username")
-                .passwordParameter("password")
-                .successHandler((request, response, auth) -> {
-                    // login success
-                    String ip = request.getRemoteAddr();
-                    String user_id = auth.getName();
 
-                    // JWT token 발급
-                    response.setCharacterEncoding("UTF-8");
-                    response.setHeader("Content-Type", "application/download; UTF-8");
-                    String token = jwtTokenProvider.createToken(user_id, auth.getAuthorities().stream().map(arg -> arg.getAuthority()).collect(Collectors.toList()));
 
-                    // 성공하면 여기서 생성된 토큰 값이 파일로 저장됨을 볼 수 있다
-                    response.getWriter().write("{\"result\" : \"" + token + "\" }");
-                })
-                .failureHandler((request, response, exception) -> {
-                    // login fail
-                    // 처음으로
-                    response.sendRedirect("/");
-                });*/
+        // enable h2-console
+        http.headers(headers ->
+            headers.frameOptions(options ->
+                    options.sameOrigin()  // SAME ORIGIN은 같은 도메인 내에서의 참조만 허용하겠다는 것
+            )
+        );
 
         // 5. csrf 설정을 off 합니다
-        http.csrf(csrf -> csrf.disable());
+        //http.csrf(csrf -> csrf.disable());
 
         return http.build();
     }
 
-
-    // CORS 설정
     @Bean
-    public CorsConfigurationSource corsConfigurationSource() {
-        CorsConfiguration configuration = new CorsConfiguration();
-        configuration.setAllowedOrigins(Arrays.asList("http://localhost:5173")); // 허용할 출처 설정
-        configuration.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS")); // 허용할 HTTP 메서드
-        configuration.setAllowedHeaders(Arrays.asList("Authorization", "Cache-Control", "Content-Type")); // 허용할 헤더
-        configuration.setAllowCredentials(true); // 쿠키나 인증 정보 허용
-
+    public CorsFilter corsFilter() {
+        System.out.println("^^ SecurityConfig corsFilter " + new Date());
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
-        source.registerCorsConfiguration("/**", configuration);
-        return source;
+        CorsConfiguration config = new CorsConfiguration();
+
+        config.setAllowCredentials(true); // 쿠키나 인증 정보 허용
+        config.addAllowedOrigin("http://localhost:5173"); // 허용할 출처
+        config.addAllowedHeader("*"); // 모든 헤더 허용
+        config.addAllowedMethod("*"); // 모든 메서드 허용 (GET, POST, PUT, DELETE, etc.)
+
+        source.registerCorsConfiguration("/**", config);
+        return new CorsFilter(source);
     }
+
 }
-
-
 
 
 
