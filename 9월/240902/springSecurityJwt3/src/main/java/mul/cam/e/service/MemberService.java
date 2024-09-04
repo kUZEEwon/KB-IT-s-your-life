@@ -8,21 +8,29 @@ import org.springframework.transaction.annotation.Transactional;
 @Service
 @Transactional
 public class MemberService {
-    private final MemberDao memberDao;
 
-    public MemberService(MemberDao memberDao) {
-        this.memberDao = memberDao;
+    private final MemberDao dao;
+
+    public MemberService(MemberDao dao) {
+        this.dao = dao;
     }
 
     public boolean idCheck(String username) {
-        return memberDao.idCheck(username) > 0 ;
+        return dao.idCheck(username) > 0;
     }
 
     public boolean regi(SecurityUser user){
-        return memberDao.regi(user) > 0;
+        return dao.regi(user) > 0;
     }
 
     public SecurityUser login(String username) {
-        return memberDao.login(username);
+        return dao.login(username);
     }
 }
+
+
+
+
+
+
+

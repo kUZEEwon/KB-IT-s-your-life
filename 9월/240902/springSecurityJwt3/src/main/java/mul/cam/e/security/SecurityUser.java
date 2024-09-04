@@ -20,7 +20,7 @@ public class SecurityUser implements UserDetails {
     private String password;
     private String name;
     private String email;
-    private String auth;   // ROLE_USER, ROLE_MANAGER, ROLE_ADMIN
+    private String auth;    // ROLE_USER ROLE_MANAGER ROLE_ADMIN
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {

@@ -1,5 +1,6 @@
 <template>
     <div id="home">
+        
         <br/><br/><br/>
         <h1>My Home</h1>     
         <br/><br/>        
@@ -8,13 +9,16 @@
         <h3>Your success is our priority.</h3>
         <br/>
         <p>If you need any assistance, don’t hesitate to reach out. We’re here to make your experience with [Your Company] as smooth and enjoyable as possible.</p>
+
     </div>
 </template>
+
 <script>
 export default {
-    name:'Home'
+    name:'home'
 }
 </script>
+
 <style>
 #home{       
     margin:auto;   
@@ -25,5 +29,5 @@ export default {
     height: 625px;
     background-size : cover;
     color: antiquewhite;
-}   
+}    
 </style>

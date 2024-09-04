@@ -1,0 +1,17 @@
+-- -----------------------------------------
+-- 	spring mvc기본 문제
+-- -----------------------------------------
+-- 	문제 1번
+-- -----------------------------------------
+
+<insert id="create" parameterType="org.scoula.board.domain.BoardVO">
+        <!--
+        문제 1번: XML코드 구현 부분
+            조건1- 삽입하는 컬럼을 테이블이름 뒤에 명시해야 함.
+            조건2- no컬럼은 자동 증가하므로 명시하지 않음.
+            조건3- 필요한 경우 insert태그 내 속성을 추가
+                  (필요 없는 경우에는 추가할 필요 없음)
+        -->
+        insert into tbl_board(title, content, writer)
+        values (#{title}, #{content}, #{writer})
+    </insert>

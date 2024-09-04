@@ -1,21 +1,22 @@
-import home from "@/components/Home.vue";
-import Login from "@/components/member/Login.vue";
-import regi from "@/components/member/regi.vue";
+
+import home from '@/components/home.vue';
+import login from '@/components/member/login.vue';
+import regi from '@/components/member/regi.vue';
 
 export default [
     {
         path:'/',
         name:'home',
-        component: home
+        component:home
     },
     {
         path:'/login',
-        name : 'login',
-        component: Login
+        name:'login',
+        component:login
     },
     {
         path:'/regi',
-        name: 'regi',
+        name:'regi',
         component:regi
     }
 ]

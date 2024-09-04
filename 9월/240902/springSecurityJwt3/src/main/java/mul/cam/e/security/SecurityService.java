@@ -26,11 +26,10 @@ public class SecurityService implements UserDetailsService {
     // Security 사용자 인증 -> Database 설정
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        System.out.println("~ loadUserByUsername()");
+        System.out.println("~ loadUserByUsername() : " + username);
 
         // DB로 접근 <- dto
         SecurityUser user = service.login(username);
-
 
         UserDetails build = null;
         try {

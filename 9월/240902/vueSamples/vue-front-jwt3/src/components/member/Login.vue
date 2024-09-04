@@ -16,20 +16,18 @@
                         <input type="password" v-model="password" class="form-control" placeholder="패스워드입력" size="20" />
                     </td>
                 </tr>
-
-                <tr>
-                    <td colspan="2"><input type="checkbox" v-model='sid' @click="saveId" />&nbsp;id저장<br /><br /></td>
+                <tr>                    
+                    <td colspan="2">
+                        <input type="checkbox" v-model='sid' @click="saveId" />&nbsp;id저장<br /><br />                     
+                    </td>
                 </tr>
-            </table>
-
-            <!-- <input type="checkbox" v-model='sid' @click="saveId" />&nbsp;id저장<br /><br /> -->
-
+            </table>            
+            
             <button v-on:click="login" class="btn btn-primary">login</button>&nbsp;&nbsp;&nbsp;&nbsp;
-            <!-- <button @click='account()'>회원가입</button> -->
             <a :href="'/regi'">회원가입</a>
 
             <br /><br />
-        </div>
+        </div>        
     </div>
 </template>
 
@@ -40,76 +38,70 @@ const { cookies } = useCookies();
 import axios from 'axios';
 
 export default {
-    name: 'login',
+    name:"login",
     data() {
         return {
-            username: '',
-            password: '',
-            sid: false // id 저장할지 말지
+            username:'',
+            password:'',
+            sid: false
         }
     },
     mounted() {
-        // vue가 들어 왔을 때 제일 먼저 실행됨
         let userId = cookies.get('userId');
-        if (userId != null) {
+        if(userId != null){
             this.sid = true;
             this.username = userId;
-        } else {
+        }else{
             this.sid = false;
             this.username = "";
         }
     },
     methods: {
-        saveId: function () {
-            if (this.sid == false && this.username.trim() != "") {
-                // id 저장
+        saveId:function () {
+            if(this.sid == false && this.username.trim() != ''){ // id 저장
                 cookies.set("userId", this.username);
-            } else {
-                // id 없애기
+            }else{
                 cookies.remove("userId");
             }
         },
+        login:function(){
 
-        login: function () {
-            // backend와 연동해야 함
             let param = {
-                params : {
-                    username : this.username,
-                    password : this.password
+                params:{
+                    username:this.username,
+                    password:this.password
                 }
             };
 
-            axios.post("http://localhost:9000/member/login", null, param)
-                .then(res => {
-                    let login_msg = res.data;
-
-                    if(login_msg === "NO_USER"){
-                        alert('회원 정보를 찾을 수 없습니다.');
+            axios.post('http://localhost:9000/member/login', null, param)
+                .then(res=>{
+                    if(res.data === "NO_USER"){
+                        alert('회원정보를 찾을 수 없습니다');
                         return;
-                    } else if(login_msg === "WRONG_PASSWORD"){
-                        alert('비밀번호를 확인해 주십시오.');
+                    }else if(res.data === "LOGIN_FAIL"){
+                        alert('비밀번호를 확인해 주십시오');
                         return;
-                    } 
+                    }
 
-                    //  alert(login_msg);token
+                    // login 이 성공했을 시
 
-                    // login 성공시
+                    //alert(res.data); // <- token
 
-                    // 1. 세션 스토리지 사용
-                    sessionStorage.setItem("token", login_msg); // token 저장
-                    sessionStorage.setItem("username", this.username);
+                    // sessionStorage
+                    // localStorage
+                    
+                    sessionStorage.setItem("token", res.data);  // 토큰 저장
+                    sessionStorage.setItem("username", this.username); // 아이디 저장
 
                     this.$router.push('/');
 
-                    // 2. 로컬 스토리지 사용
-
-
                 })
-                .catch(err => {
+                .catch(err=>{
                     alert(err);
                 })
         }
     },
+
 }
 </script>
 
@@ -145,5 +137,5 @@ th {
 
 .left {
     text-align: left;
-}
+}    
 </style>

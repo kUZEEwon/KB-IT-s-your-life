@@ -10,7 +10,6 @@
 
     BbsParam param = (BbsParam)request.getAttribute("param");
     int pageNumber = param.getPageNumber();
-
 %>
 
 <html>

@@ -1,30 +1,28 @@
 <template>
-
   <div id="app">
-    <!-- header -->
+    <!-- header-->
     <header>
 
     </header>
 
     <!-- navbar -->
-
     <nav class="navbar navbar-expand-md navbar-dark bg-info sticky-top">
-      <div class='container text-center'>
+      <div class='container text-center'>      
 
-        <div class="collapse navbar-collapse justify-content-between" id="collapsibleNavbar">
+        <div class="collapse navbar-collapse justify-content-between" id="collapsibleNavbar">        
+          <ul class="navbar-nav">            
+            <li class="nav-item">                
+              <a href="/" class='nav-link'>Home</a>       
+            </li>            
+            <li class="nav-item">                
+              <a href="/bbslist" class='nav-link' to="/bbslist">게시판</a>        
+            </li>        
+          </ul>        
           <ul class="navbar-nav">
-            <li class="nav-item">
-              <a href="/" class='nav-link'>Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="/bbslist" class='nav-link' to="/bbslist">게시판</a>
-            </li>
-          </ul>
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a href="/login" class='nav-link' to="/login">Login</a>
-            </li>
-          </ul>
+            <li class="nav-item">                
+              <a href="/login" class='nav-link' to="/login">Login</a>      
+            </li>        
+          </ul>    
         </div>
       </div>
     </nav>
@@ -32,7 +30,7 @@
     <!-- Main -->
     <Main />
 
-    <!-- Footer -->
+    <!-- footer -->
     <footer className="py-4 bg-info text-light">
       <div className="container text-center">
         <ul className="nav justify-content-center mb-3">
@@ -45,24 +43,22 @@
         <p>
           <small>Copyright &copy;Graphic Arts</small>
         </p>
-      </div>
+      </div>  
     </footer>
 
   </div>
-
 </template>
 
 <script>
-import Main from "./views/Main.vue"
+import Main from "./views/Main.vue";
 
-export default {
-  name: 'App',
-  components: {
+export default{
+  name:'App',
+  components:{
     Main
   }
 }
 </script>
-
 
 <style>
 #app {
@@ -85,5 +81,5 @@ header{
 .navbar-nav > li{  
   padding-left:20px;
   padding-right:20px;
-}                                  
+}
 </style>

@@ -1,0 +1,10 @@
+-- -----------------------------------------
+-- 	spring rest 문제
+-- -----------------------------------------
+-- 	문제 4번
+-- -----------------------------------------
+ @GetMapping("/list")
+    public ResponseEntity<List<BoardVO>> list() {
+        // to JSON ARRAY
+        return ResponseEntity.ok(service.getList());
+    }

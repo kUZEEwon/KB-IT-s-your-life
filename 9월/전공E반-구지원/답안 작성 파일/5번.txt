@@ -1,0 +1,8 @@
+-- -----------------------------------------
+-- 	문제 5번
+-- -----------------------------------------
+@GetMapping("{no}")
+    public ResponseEntity<BoardVO> get(@PathVariable Long no) {
+        BoardVO vo = service.get(no);
+        return ResponseEntity.ok(vo);
+    }

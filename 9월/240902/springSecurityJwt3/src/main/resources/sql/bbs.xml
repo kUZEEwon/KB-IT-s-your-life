@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="mul.cam.e.dao.BbsDao">
+
+    <select id="bbsList" parameterType="mul.cam.e.dto.BbsParam"
+            resultType="mul.cam.e.dto.BbsDto">
+        select seq, username, ref, step, depth,
+        title, content, wdate, del, readcount
+        from bbs
+        <if test="category != null and category != '' and keyword != null and keyword != '' ">
+            <if test="category == 'title'">
+                where title like concat('%', #{keyword}, '%') and del=0
+            </if>
+            <if test="category == 'content'">
+                where content like concat('%', #{keyword}, '%') and del=0
+            </if>
+            <if test="category == 'writer'">
+                where id=#{keyword} and del=0
+            </if>
+        </if>
+        order by ref desc, step asc
+        limit ${(pageNumber * 10)}, 10
+    </select>
+
+    <!-- 글의 총수 -->
+    <select id="allBbs" parameterType="mul.cam.e.dto.BbsParam"
+                resultType="java.lang.Integer">
+        select count(*)
+        from bbs
+        <if test="category != null and category != '' and keyword != null and keyword != '' ">
+            <if test="category == 'title'">
+                where title like concat('%', #{keyword}, '%') and del=0
+            </if>
+            <if test="category == 'content'">
+                where content like concat('%', #{keyword}, '%') and del=0
+            </if>
+            <if test="category == 'writer'">
+                where id=#{keyword} and del=0
+            </if>
+        </if>
+    </select>
+
+
+    <insert id="bbsWrite" parameterType="mul.cam.e.dto.BbsDto">
+        insert into bbs(username, ref, step, depth, title, content, wdate, del, readcount)
+        values(#{username}, (select ifnull(max(ref), 0)+1 from bbs b), 0, 0,
+               #{title}, #{content}, now(), 0, 0)
+    </insert>
+
+
+    <select id="bbsDetail" parameterType="mul.cam.e.dto.BbsDto"
+            resultType="mul.cam.e.dto.BbsDto">
+        select seq, username, ref, step, depth, title, content, wdate, del, readcount
+        from bbs
+        where seq=#{seq}
+    </select>
+
+
+    <!-- 답글 -->
+    <!-- 수정 -->
+    <update id="bbsAnswerUpdate" parameterType="mul.cam.e.dto.BbsDto">
+        update bbs
+        set step=step+1
+        where ref=(select ref from (select ref from bbs a where seq=#{seq}) A)
+          and step>(select step from (select step from bbs b where seq=#{seq}) B)
+    </update>
+
+    <!-- 추가 -->
+    <insert id="bbsAnswerInsert" parameterType="mul.cam.e.dto.BbsDto">
+        insert into bbs(username, ref, step, depth, title, content, wdate, del, readcount)
+        values(#{username}, (select ref from bbs a where seq=#{seq}),
+               (select step from bbs b where seq=#{seq})+1,
+               (select depth from bbs c where seq=#{seq})+1,
+               #{title}, #{content}, now(), 0, 0)
+    </insert>
+
+
+    <update id="bbsUpdate" parameterType="mul.cam.e.dto.BbsDto">
+        update bbs
+        set title=#{title}, content=#{content}, wdate=now()
+        where seq=#{seq}
+    </update>
+</mapper>

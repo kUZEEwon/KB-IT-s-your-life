@@ -4,8 +4,7 @@
 
 <mapper namespace="mul.cam.e.dao.MemberDao">
 
-    <select id="idCheck" parameterType="java.lang.String"
-            resultType="java.lang.Integer">
+    <select id="idCheck" parameterType="java.lang.String" resultType="java.lang.Integer">
         select count(*)
         from member
         where username=#{username}
@@ -21,4 +20,5 @@
         from member
         where username=#{username}
     </select>
+
 </mapper>
